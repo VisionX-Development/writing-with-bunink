@@ -1,5 +1,7 @@
 ---
-title: Über dieses Handbuch
+
+## title: Über dieses Handbuch
+
 chapter: 0
 slug: ueber-dieses-handbuch
 slug_en: about-this-handbook
@@ -7,11 +9,10 @@ description: Für wen dieses Handbuch geschrieben ist, wie es aufgebaut ist und 
 lang: de
 status: draft
 updated: 2026-08-15
----
 
 # Über dieses Handbuch
 
-Dieses Handbuch erklärt, wie du mit bun.ink arbeitest: schreiben, Fassungen verwalten, mit anderen an einem Text arbeiten. Es ist für Menschen geschrieben, die beruflich schreiben — nicht für Menschen, die beruflich programmieren.
+Dieses Handbuch erklärt, wie du mit bun.ink arbeitest: schreiben, Fassungen verwalten, mit anderen an einem Text arbeiten. Es ist für Menschen geschrieben, die beruflich oder als Hobby schreiben — nicht für Menschen, die programmieren.
 
 ## Für wen es geschrieben ist
 
@@ -45,4 +46,8 @@ Geschrieben wird auf Deutsch. Die englische Fassung wird daraus erzeugt und nich
 
 Dann melde ihn als Issue in diesem Repository, oder schick gleich einen Pull Request auf die deutsche Fassung. Beides hilft — auch der Hinweis, dass eine Stelle unverständlich ist, ohne dass du weisst, wie es besser ginge.
 
-Wünsche an die App selbst gehören nicht hierher, sondern in die öffentliche Roadmap.
+Kommst du mit dem Handbuch nicht weiter oder hast ein hier noch nicht erfasstes Problem mit bun.ink?
+
+In diesem Falle wende dich bitte jederzeit an unseren Support unter: [info@bun.ink](mailto:info@bun.ink), wir versuchen dein Problem dann schnellst möglich zu Lösen oder machen dir Lösungsvorschläge.
+
+Wünsche an die App z.B. wünsche zu neuen Funktionen und Features selbst gehören nicht hierher, sondern in die öffentliche Roadmap.
