@@ -1,18 +1,26 @@
 ---
 
-## title: Über dieses Handbuch
+title: Über dieses Handbuch
 
 chapter: 0
+
 slug: ueber-dieses-handbuch
+
 slug_en: about-this-handbook
+
 description: Für wen dieses Handbuch geschrieben ist, wie es aufgebaut ist und warum es in einem Git-Repository liegt.
+
 lang: de
+
 status: draft
+
 updated: 2026-08-15
+
+---
 
 # Über dieses Handbuch
 
-Dieses Handbuch erklärt, wie du mit bun.ink arbeitest: schreiben, Fassungen verwalten, mit anderen an einem Text arbeiten. Es ist für Menschen geschrieben, die beruflich oder als Hobby schreiben — nicht für Menschen, die programmieren.
+Dieses Handbuch erklärt, wie du mit [bun.ink](http://bun.ink) arbeitest: schreiben, Fassungen verwalten, mit anderen an einem Text arbeiten. Es ist für Menschen geschrieben, die beruflich oder als Hobby schreiben — nicht für Menschen, die programmieren.
 
 ## Für wen es geschrieben ist
 
