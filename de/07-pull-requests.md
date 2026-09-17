@@ -76,7 +76,7 @@ An jeder Karte gibt es zwei Knöpfe: Der Stift öffnet den Entwurf zum Nachbesse
 
 Ändert sich der Text unter einem Entwurf, etwa weil du den Absatz danach noch einmal umgeschrieben hast, bekommt die Karte einen roten Rahmen mit dem Hinweis, dass die Stelle inzwischen anders lautet. Bessere den Entwurf nach, wende ihn mit **Erneut anwenden** wieder an oder entferne ihn. Solange eine solche Karte offen ist, entsteht kein Pull Request.
 
-Alle Entwürfe bleiben auf deinem Gerät, auch wenn du das Fenster schliesst oder den Browser neu lädst. Die Seitenleiste zeigt an, wie viele Notizen und Vorschläge angefangen sind, und **Überarbeitung fortsetzen** bringt dich zurück.
+Alle Entwürfe bleiben auf deinem Gerät, auch wenn du das Fenster schliesst oder den Browser neu lädst. Die Seitenleiste zeigt an, wie viele Notizen und Vorschläge angefangen sind, und **Überarbeitung fortsetzen** bringt dich zurück. Ein Abmelden löscht sie dagegen — zusammen mit allem, was du auf dem Branch noch nicht nach GitHub gespeichert hast; bun.ink warnt vorher und nennt die betroffenen Branches. Was du mit **Auf Branch speichern** gesichert hast, ist davon nicht betroffen.
 
 ## **Den Pull Request erzeugen**
 
