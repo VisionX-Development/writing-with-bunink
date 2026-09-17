@@ -18,7 +18,9 @@ updated: 2026-08-15
 
 ---
 
-# Über dieses Handbuch
+
+
+# **Über dieses Handbuch**
 
 Dieses Handbuch erklärt, wie du mit [bun.ink](http://bun.ink) arbeitest: schreiben, Fassungen verwalten, mit anderen an einem Text arbeiten. Es ist für Menschen geschrieben, die beruflich oder als Hobby schreiben — nicht für Menschen, die programmieren.
 

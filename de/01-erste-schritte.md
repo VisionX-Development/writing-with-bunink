@@ -20,7 +20,7 @@ updated: 2026-08-21
 
 
 
-# Erste Schritte
+# **Erste Schritte**
 
 Bevor du schreiben kannst, brauchst du ein Konto. Dieses Kapitel führt dich durch die Registrierung, die Bestätigung deiner E-Mail-Adresse und die Anmeldung. Danach siehst du, was in den Einstellungen steht und was du dort ändern kannst.
 

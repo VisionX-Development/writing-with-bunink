@@ -18,7 +18,9 @@ updated: 2026-08-21
 
 ---
 
-# Commits und Historie
+
+
+# **Commits und Historie**
 
 Ein Repository merkt sich nicht jeden Tastendruck, sondern die Stände, die du bewusst festhältst. Dieses Kapitel zeigt, wie du so einen Stand erzeugst und wo du die entstandene Geschichte nachliest.
 
@@ -67,4 +69,3 @@ Was [bun.ink](http://bun.ink) aus der Historie verwendet, ist die Aktivität: Di
 Unabhängig von Git führt [bun.ink](http://bun.ink) ausserdem einen eigenen Versionsverlauf pro Dokument, im Seitenleisten-Bereich **Verlauf**. Der ist etwas anderes als die Commit-Historie: feinkörniger, nur für ein Dokument, und nur auf dem Hauptbranch verfügbar.
 
 ---
-

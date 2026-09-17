@@ -18,7 +18,9 @@ updated: 2026-08-21
 
 ---
 
-# Branches: Fassungen eines Textes
+
+
+# **Branches: Fassungen eines Textes**
 
 Manchmal willst du etwas ausprobieren, ohne den bestehenden Text anzutasten. Ein Branch ist genau das: eine zweite Fassung, die parallel läuft, bis du entscheidest, ob sie die richtige war.
 
@@ -26,9 +28,9 @@ Manchmal willst du etwas ausprobieren, ohne den bestehenden Text anzutasten. Ein
 
 Ein Branch ist ein Abzweig. Du nimmst den aktuellen Stand deines Repositorys, gibst ihm einen Namen und arbeitest von da an in dieser Kopie weiter. Der Hauptstand bleibt unberührt.
 
-Dieser Hauptstand hat auch einen Namen; bei den meisten Repositories heisst er `main`. In bun.ink ist er der **Default-Branch**.
+Dieser Hauptstand hat auch einen Namen; bei den meisten Repositories heisst er `main oder master branch`. In bun.ink ist er der **Default-Branch**.
 
-Für Schreibende ist das der praktische Nutzen: Du kannst ein Kapitel radikal umschreiben, eine zweite Erzählperspektive testen, eine gekürzte Fassung für eine andere Publikation anlegen — alles gleichzeitig, alles nachvollziehbar, ohne Dateinamen wie `kapitel-3-neu-final-2.md`.
+Für Schreibende hat das einen praktischen Nutzen: Du kannst ein Kapitel radikal umschreiben, eine zweite Erzählperspektive testen, eine gekürzte Fassung für eine andere Publikation anlegen — alles gleichzeitig, alles nachvollziehbar, ohne Dateinamen wie `kapitel-3-neu-final-2.md`.
 
 ## Einen Branch anlegen
 
