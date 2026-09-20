@@ -142,6 +142,24 @@ async function translate(client, system, text) {
 	return out;
 }
 
+/**
+ * Übersetzt ein einzeiliges Frontmatter-Feld (title, description). Kurze
+ * Sätze ohne Kontext hat das Modell schon als Schreibauftrag missverstanden
+ * und ein ganzes Kapitel geliefert — deshalb wird das Feld benannt und ein
+ * mehrzeiliges Ergebnis abgewiesen, statt still in die Datei zu wandern.
+ */
+async function translateField(client, system, field, text) {
+	const out = await translate(
+		client,
+		system,
+		`Translate the following front-matter field \`${field}\` (a single line). Return only the translated line.\n\n${text}`
+	);
+	if (/\r?\n/.test(out)) {
+		throw new Error(`Feld ${field} kam mehrzeilig zurueck:\n${out.slice(0, 200)}`);
+	}
+	return out;
+}
+
 async function main() {
 	const args = process.argv.slice(2);
 	const force = args.includes('--force');
@@ -195,8 +213,10 @@ async function main() {
 
 			console.log(`uebersetze ${source.name} -> ${relative} …`);
 			const [title, description, translatedBody] = await Promise.all([
-				translate(client, target.system, data.title),
-				data.description ? translate(client, target.system, data.description) : '',
+				translateField(client, target.system, 'title', data.title),
+				data.description
+					? translateField(client, target.system, 'description', data.description)
+					: '',
 				translate(client, target.system, body)
 			]);
 
