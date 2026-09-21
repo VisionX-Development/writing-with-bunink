@@ -10,25 +10,14 @@ Every file in `de/` starts with a front-matter block. The translate script reads
 ---
 title: Projekte, Ordner und Dokumente
 chapter: 3
-slug: projekte-und-dokumente
-slug_en: projects-folders-and-documents
+slug: [chapter]-projekte-und-dokumente, eg. 00-projekte-und dokumente -> has to match file name
+slug_en: [chapter]projects-folders-and-documents, eg. 00-projects-folders-and-documents -> has to match file name
 description: Wie ein Schreibprojekt aufgebaut ist und wo ein Text hingehört.
 lang: de
 status: draft
 updated: 2026-08-15
 ---
 ```
-
-| Field | Required | Notes |
-|---|---|---|
-| `title` | yes | The chapter heading, as a reader sees it. Translated automatically. |
-| `chapter` | yes | The number, matching the filename prefix. `0` for the introduction. |
-| `slug` | yes | German slug, matching the filename. |
-| `slug_en` | yes | English slug — becomes the filename in `en/`. Without it the German filename is reused, which reads wrong in an English handbook. |
-| `description` | yes | One sentence: what this chapter is for. Also the chapter's one-line purpose test — see [`CHAPTERS.md`](CHAPTERS.md). Translated automatically. |
-| `lang` | yes | `de` in the source. Set automatically in generated files. |
-| `status` | yes | `draft`, `review`, or `done`. Mirrored in [`CONTENTS.md`](CONTENTS.md). |
-| `updated` | yes | `YYYY-MM-DD`, the last substantive edit. |
 
 Generated files in `en/` carry two extra fields, `source` and `source_hash`, which record where the translation came from and whether it is still current. Do not edit them.
 
