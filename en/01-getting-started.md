@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/01-erste-schritte.md
-source_hash: 90002eb2abf461a99545a48f515aa106f5ef8180bd1ae6c103c58ab15f7d483b
+source_hash: c12caabe3d3094b0393cd8da7e7beb93178b681364a4ce836148fd30add80de2
 ---
 
 # **Getting Started**

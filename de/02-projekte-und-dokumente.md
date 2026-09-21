@@ -1,21 +1,12 @@
 ---
-
 title: Projekte, Ordner und Dokumente
-
 chapter: 2
-
 slug: projekte-und-dokumente
-
 slug_en: projects-folders-and-documents
-
 description: Wie ein Schreibprojekt aufgebaut ist, wo ein Text hingehört und wie du Texte hinein- und herausbekommst.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

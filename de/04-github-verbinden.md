@@ -1,21 +1,12 @@
 ---
-
 title: GitHub verbinden
-
 chapter: 4
-
 slug: github-verbinden
-
 slug_en: connecting-github
-
 description: Was ein Repository ist, wie du deinen GitHub-Account verbindest und ein Projekt mit einem Repository verknüpfst.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

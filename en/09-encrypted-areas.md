@@ -2,12 +2,12 @@
 title: Encrypted Areas
 chapter: 9
 slug: encrypted-areas
-description: "How [bun.ink](http://bun.ink) encrypts your texts, what extra protection a high-privacy area gives you, and what it costs you."
+description: "How bun.ink encrypts your texts, what extra protection a high-privacy area gives you, and what it costs you."
 lang: en
 status: translated
 updated: 2026-09-21
 source: de/09-verschluesselte-bereiche.md
-source_hash: 6ee3078cd8b74585985468e07aba10cd751254845e688da4fa93fdb48fe88a6c
+source_hash: df75f56c97646b0ae403931612605b78d999e43600cf3a3c339f68b00b944f6e
 ---
 
 # Encrypted Areas

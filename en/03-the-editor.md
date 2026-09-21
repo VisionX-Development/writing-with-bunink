@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/03-der-editor.md
-source_hash: 82df1f06c4827080ce249a9502bdc0001c0f136aebc75c547304bf650b8f34d2
+source_hash: b36d2f126e3a48b595e718709888c337a6ba95ee3a16b96a72ed3e3e856d498d
 ---
 
 # **The editor**

@@ -1,21 +1,12 @@
 ---
-
 title: Statistik, Versionen und Export
-
 chapter: 10
-
 slug: statistik-versionen-export
-
-slug\_en: statistics-versions-and-export
-
-description: Wo [bun.ink](http://bun.ink) sich deine früheren Fassungen merkt, was die Schreibstatistik zeigt und wie du deine Texte wieder herausbekommst.
-
+slug_en: statistics-versions-and-export
+description: Wo bun.ink sich deine früheren Fassungen merkt, was die Schreibstatistik zeigt und wie du deine Texte wieder herausbekommst.
 lang: de
-
 status: draft
-
 updated: 2026-09-21
-
 ---
 
 # Statistik, Versionen und Export

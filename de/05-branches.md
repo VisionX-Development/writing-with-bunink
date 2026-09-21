@@ -1,21 +1,12 @@
 ---
-
 title: Branches: Fassungen eines Textes
-
 chapter: 5
-
 slug: branches
-
 slug_en: branches
-
 description: Wie du eine Fassung eines Textes parallel zum Hauptstand entwickelst und sie später zusammenführst.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

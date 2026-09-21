@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/04-github-verbinden.md
-source_hash: 524d2de7443b18398ce965db87df8d5635bd67cdf4a05f23be03d8b961ec74b9
+source_hash: db2abf92446551663efaa166d429f70774fc20520a5342d6237b2a3234241f74
 ---
 
 # **Connecting GitHub**

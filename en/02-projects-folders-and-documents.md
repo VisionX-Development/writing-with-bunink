@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/02-projekte-und-dokumente.md
-source_hash: fb58d3d5f223fbd98e5ef6774bd77d43ba5a4bd264fc5bd4fd8eb8f5e11bc805
+source_hash: f520574c2557fb116fda0edaa17cf4ef8a5e0405ec93a55dcd6a55485a1ffee1
 ---
 
 # **Projects, folders and documents**

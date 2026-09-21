@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-17
 source: de/07-pull-requests.md
-source_hash: f5e8e61f1a03953ed0c61792c242ad5afae73a5d2ac576fc73b54069eb409f5f
+source_hash: 164211caddc7345ae36af9a759a7d66716f103bcf9f7fa4a78724bed56d4ebd4
 ---
 
 # **Pull Requests: Working with an Editor**

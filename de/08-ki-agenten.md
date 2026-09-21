@@ -1,21 +1,12 @@
 ---
-
 title: KI-Agenten auf deinen Texten
-
 chapter: 8
-
 slug: ki-agenten
-
-slug\_en: ai-agents
-
+slug_en: ai-agents
 description: Wie ein KI-Agent dein Repository liest, Änderungen vorschlägt und wie du entscheidest, was davon in deinen Text kommt.
-
 lang: de
-
 status: draft
-
 updated: 2026-09-21
-
 ---
 
 # KI-Agenten auf deinen Texten

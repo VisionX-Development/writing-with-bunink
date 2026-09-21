@@ -2,12 +2,12 @@
 title: Statistics, Versions, and Export
 chapter: 10
 slug: statistics-versions-and-export
-description: "Where [bun.ink](http://bun.ink) remembers your earlier versions, what the writing statistics show, and how to get your texts back out again."
+description: "Where bun.ink remembers your earlier versions, what the writing statistics show, and how to get your texts back out again."
 lang: en
 status: translated
 updated: 2026-09-21
 source: de/10-statistik-versionen-export.md
-source_hash: 3e322336eaafbefed7179c10e3382df1b148d55baa8f70dc3c584e6e1885209a
+source_hash: 8525652ee2c299a07003c6c7a996da04ef3a23a24e4c12837811d3585081b368
 ---
 
 # Statistics, Versions and Export

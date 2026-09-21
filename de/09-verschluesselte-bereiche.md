@@ -1,21 +1,12 @@
 ---
-
 title: Verschlüsselte Bereiche
-
 chapter: 9
-
 slug: verschluesselte-bereiche
-
-slug\_en: encrypted-areas
-
-description: Wie [bun.ink](http://bun.ink) deine Texte verschlüsselt, was ein High-Privacy-Bereich zusätzlich schützt und was er dich kostet.
-
+slug_en: encrypted-areas
+description: Wie bun.ink deine Texte verschlüsselt, was ein High-Privacy-Bereich zusätzlich schützt und was er dich kostet.
 lang: de
-
 status: draft
-
 updated: 2026-09-21
-
 ---
 
 # Verschlüsselte Bereiche

@@ -1,21 +1,12 @@
 ---
-
 title: Commits und Historie
-
 chapter: 6
-
 slug: commits-und-historie
-
 slug_en: commits-and-history
-
 description: Wie aus deinen Änderungen ein Commit wird, wie du ihn nach GitHub bringst und wo du die Geschichte deines Textes nachliest.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

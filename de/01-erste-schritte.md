@@ -1,21 +1,12 @@
 ---
-
 title: Erste Schritte
-
 chapter: 1
-
 slug: erste-schritte
-
 slug_en: getting-started
-
 description: Wie du ein Konto anlegst, deine E-Mail-Adresse bestätigst, dich anmeldest und was in den Einstellungen steht.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

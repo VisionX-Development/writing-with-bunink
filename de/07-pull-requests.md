@@ -1,21 +1,12 @@
 ---
-
 title: Pull Requests: Zusammenarbeit mit dem Lektorat
-
 chapter: 7
-
 slug: pull-requests
-
 slug_en: pull-requests
-
 description: Wie du mit Hilfe einer zweiten Person deine Texte überarbeiten kannst, z.B. einem Lektor.
-
 lang: de
-
 status: draft
-
 updated: 2026-09-17
-
 ---
 
 

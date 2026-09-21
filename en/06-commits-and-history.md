@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/06-commits-und-historie.md
-source_hash: e8069fff15fd6df27a9434f815f115111f6adec05b28db016dd0cbc47599bf17
+source_hash: 1be6e25fca50bf6869b4ea57b0faaba9a3eec427332944a6efb43fb43ceb9f12
 ---
 
 # **Commits and history**

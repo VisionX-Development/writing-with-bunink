@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/00-ueber-dieses-handbuch.md
-source_hash: 2bc7de1024b8eba97650a21d07c3c9de52569070f16745b01e03ceed5a9c093a
+source_hash: a50a2206e3a83e0f16d1a0e9f945428e08e16050950eaf635bb70faadce464f0
 ---
 
 # **About this handbook**

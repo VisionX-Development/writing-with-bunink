@@ -21,7 +21,7 @@ updated: 2026-08-15
 
 Generated files in `en/` carry two extra fields, `source` and `source_hash`, which record where the translation came from and whether it is still current. Do not edit them.
 
-bun.ink's editor currently rewrites the block on save — blank lines between fields and `slug\_en` instead of `slug_en`. The sync reads both forms, so you do not need to repair it by hand.
+Older versions of bun.ink's editor rewrote the block on save — blank lines between fields and `slug\_en` instead of `slug_en`. The editor now keeps the block byte for byte, and the sync still reads the old form, so nothing needs repairing by hand.
 
 Keep the syntax flat — one `key: value` per line. The parser is deliberately minimal so the repository needs no YAML dependency; nested structures will not be read.
 

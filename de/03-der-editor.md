@@ -1,21 +1,12 @@
 ---
-
 title: Der Editor
-
 chapter: 3
-
 slug: der-editor
-
 slug_en: the-editor
-
 description: Wie du im Editor schreibst, formatierst, speicherst und mit Snippets schneller wirst.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-21
-
 ---
 
 

@@ -1,21 +1,12 @@
 ---
-
 title: Über dieses Handbuch
-
 chapter: 0
-
 slug: ueber-dieses-handbuch
-
 slug_en: about-this-handbook
-
 description: Für wen dieses Handbuch geschrieben ist, wie es aufgebaut ist und warum es in einem Git-Repository liegt.
-
 lang: de
-
 status: draft
-
 updated: 2026-08-15
-
 ---
 
 

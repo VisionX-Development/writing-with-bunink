@@ -7,7 +7,7 @@ lang: en
 status: translated
 updated: 2026-09-20
 source: de/05-branches.md
-source_hash: 50945a329a501721d879babf95dc87ab19fe0dcd907ada8e0059850fd6de75a1
+source_hash: 898cc1a4c17e527fcc2870d7bf0e16e4427f18c69c5567a4558b6d00171f19aa
 ---
 
 # **Branches: Versions of a Text**
