@@ -147,4 +147,4 @@ Hast du alles, was du wolltest, schon Stelle für Stelle übernommen, beendet **
 
 ### **Dateien, die keine Dokumente sind**
 
-Ändert die Überarbeitung eine Datei, die in deinem Projekt kein Dokument ist, kannst du sie in bun.ink nicht einzeln übernehmen. Sie zählt nicht als offene Entscheidung, und der Merge bringt sie trotzdem mit.
+Ändert die Überarbeitung eine Datei, die in deinem Projekt kein Dokument ist, kannst du sie in bun.ink nicht einzeln übernehmen. Sie zählt nicht als offene Entscheidung, aber der Merge bringt sie trotzdem mit.
