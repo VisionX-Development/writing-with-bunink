@@ -21,12 +21,11 @@ If you want to know what "Git for writers" actually looks like day to day, the t
 ```
 de/          the handbook, in German — the source of truth
 en/          the English translation — generated, never edited by hand
-scripts/     the translation script
 ```
 
 | File | What it tells you |
 |---|---|
-| [CONTENTS.md](CONTENTS.md) | Every chapter, its status, and where its files are |
+| [CONTENTS.md](CONTENTS.md) | Every chapter, its status, and where its files are — generated |
 | [CHAPTERS.md](CHAPTERS.md) | How chapters are numbered, ordered, and scoped |
 | [DOCUMENTS.md](DOCUMENTS.md) | What a single chapter file looks like inside |
 | [AGENTS.md](AGENTS.md) | The short version of all of the above, for AI agents |
@@ -35,22 +34,16 @@ German is the authoring language; English is generated from it. Further language
 
 ## Translating
 
-```bash
-npm install
-export ANTHROPIC_API_KEY=...
-npm run translate          # translate what changed
-npm run translate:check    # is en/ current? (no API calls)
-npm run translate:force    # re-translate everything
-```
+`en/` and `CONTENTS.md` are produced by a sync that runs from bun.ink's (private) source repository, the same way the [blog](https://github.com/VisionX-Development/bunink-blogposts) is kept in sync: it pulls `main`, translates every chapter whose German file changed, removes translations whose source is gone, regenerates the table of contents and pushes the result back here. Each German file is hashed and the hash recorded in its translation (`source_hash`), so an unchanged chapter is never translated twice.
 
-Each German file is hashed and the hash recorded in its translation, so a run with nothing to do costs nothing. Commit `de/` and `en/` together.
+Write in `de/`, save to `main`, and the English follows with the next sync.
 
 ## Contributing
 
-Corrections and gaps are welcome — open an [issue](../../issues), or a pull request against the German source in `de/`. Please do not send changes to `en/`: it is generated, and the next translation run would overwrite them.
+Corrections and gaps are welcome — open an [issue](../../issues), or a pull request against the German source in `de/`. Please do not send changes to `en/` or `CONTENTS.md`: both are generated, and the next sync would overwrite them.
 
 For feature requests and bug reports about the app itself, use the [bun.ink roadmap repository](https://github.com/VisionX-Development/bunink-roadmap) instead. Security problems go to [info@bun.ink](mailto:info@bun.ink), never a public issue.
 
 ## Licence
 
-The handbook text is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use it, translate it, quote it, with attribution. The scripts are MIT.
+The handbook text is published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use it, translate it, quote it, with attribution.

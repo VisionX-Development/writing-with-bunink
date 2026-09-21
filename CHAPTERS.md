@@ -11,7 +11,7 @@ de/03-projekte-und-dokumente.md
    └──── two-digit chapter number, zero-padded
 ```
 
-The English counterpart is generated at `en/<NN>-<slug_en>.md` — same number, translated slug. The number is what pairs the two files across languages, so **it never changes once a chapter is published**.
+The English counterpart is generated at `en/<NN>-<slug_en>.md` — same number, translated slug. The number is what pairs the two files across languages, so **it never changes once a chapter is published**. Changing `slug_en` renames the English file on the next sync.
 
 Chapter `00` is the introduction to the handbook itself and is not counted as a content chapter.
 
@@ -39,14 +39,13 @@ Do not split a chapter into a folder of files. The flat structure is what keeps 
 
 1. Pick the number by where it belongs in the reading order.
 2. Create `de/<NN>-<slug>.md` with complete front matter (see [`DOCUMENTS.md`](DOCUMENTS.md)), including `slug_en`.
-3. Add the row to [`CONTENTS.md`](CONTENTS.md).
-4. Write it in bun.ink, on a branch.
-5. Run `npm run translate`, then open a pull request with `de/` and `en/` in the same commit.
+3. Write it in bun.ink, on a branch, and merge it to `main` through a pull request.
+4. The sync translates it and adds its row to [`CONTENTS.md`](CONTENTS.md).
 
 ### Inserting between existing chapters
 
-Renumbering published chapters breaks every link that points at them. Prefer appending at the end of a section, or — where a topic genuinely belongs in the middle — leave gaps: the numbering has no requirement to be contiguous. Renumber only when the reading order is actually wrong, and then renumber in one commit that touches `de/`, `en/`, `CONTENTS.md`, and every cross-reference.
+Renumbering published chapters breaks every link that points at them. Prefer appending at the end of a section, or — where a topic genuinely belongs in the middle — leave gaps: the numbering has no requirement to be contiguous. Renumber only when the reading order is actually wrong, and then renumber in one commit that touches `de/` and every cross-reference — `en/` and `CONTENTS.md` follow with the sync.
 
 ## Removing a chapter
 
-Delete both language files and its row in `CONTENTS.md`, and grep for links to it. If the topic still exists but moved, say where it went in the pull request — readers who bookmarked the file will end up in the Git history looking for it.
+Delete the German file and grep for links to it; the sync removes the English file and the row in `CONTENTS.md`. If the topic still exists but moved, say where it went in the pull request — readers who bookmarked the file will end up in the Git history looking for it.

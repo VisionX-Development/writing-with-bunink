@@ -4,7 +4,7 @@ The anatomy of a single handbook file. For how chapters are divided and ordered,
 
 ## Front matter
 
-Every file in `de/` starts with a front-matter block. The translate script reads it, so a malformed block means the file is skipped.
+Every file in `de/` starts with a front-matter block. The sync reads it, so a malformed block means the file is skipped.
 
 ```markdown
 ---
@@ -20,6 +20,8 @@ updated: 2026-08-15
 ```
 
 Generated files in `en/` carry two extra fields, `source` and `source_hash`, which record where the translation came from and whether it is still current. Do not edit them.
+
+bun.ink's editor currently rewrites the block on save — blank lines between fields and `slug\_en` instead of `slug_en`. The sync reads both forms, so you do not need to repair it by hand.
 
 Keep the syntax flat — one `key: value` per line. The parser is deliberately minimal so the repository needs no YAML dependency; nested structures will not be read.
 
