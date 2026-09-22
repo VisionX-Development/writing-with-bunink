@@ -1,13 +1,15 @@
 ---
-title: Statistik, Versionen und Export
+
+## title: Statistik, Versionen und Export
 chapter: 10
 slug: statistik-versionen-export
-slug_en: statistics-versions-and-export
+slug\_en: statistics-versions-and-export
 description: Wo bun.ink sich deine früheren Fassungen merkt, was die Schreibstatistik zeigt und wie du deine Texte wieder herausbekommst.
 lang: de
 status: draft
 updated: 2026-09-21
----
+
+
 
 # Statistik, Versionen und Export
 
@@ -40,7 +42,6 @@ Er entsteht ohne dein Zutun: [bun.ink](http://bun.ink) legt beim Speichern Fassu
 Zwei Eigenheiten sind wichtig:
 
 - **Nur auf dem Hauptbranch.** Bist du im Branch-Modus, gibt es keinen Verlauf. Was du dort schreibst, liegt bis zum Speichern nur in deinem Browser (Kapitel 5) — speichere deshalb auf einem Branch öfter, als du es gewohnt bist.
-
 - **Konfliktversionen landen hier.** Meldet der Editor, dass dasselbe Dokument anderswo gespeichert wurde, legt **Lokale Version sichern** deinen Stand als eigene Fassung in den Verlauf (Kapitel 3). Genau dafür ist er da: Nichts geht verloren, und du vergleichst später in Ruhe.
 
 Die naheliegende Verwechslung: Der Verlauf ist nicht deine Commit-Historie. Er kennt nur dieses eine Dokument, er kennt keine Commit-Nachrichten, und er verlässt [bun.ink](http://bun.ink) nicht. Wenn du festhalten willst, dass ein bestimmter Stand *der* Stand war — die Fassung, die zum Verlag ging —, dann gehört dazu ein Commit mit einer Nachricht, kein Eintrag im Verlauf.
@@ -54,7 +55,6 @@ Sie zählt die Wörter in deinen Dokumenten und wertet daneben die Commits der v
 Zwei Dinge, über die man sonst stolpert:
 
 - **Gesperrte High-Privacy-Dokumente zählen null Wörter** (Kapitel 9). Ein plötzlicher Einbruch in der Statistik bedeutet oft nur, dass ein verschlüsselter Bereich gerade gesperrt ist.
-
 - **Zahlen sind kein Urteil.** Ein Tag, an dem du dreihundert Wörter gestrichen hast, ist in der Statistik ein schlechter und in Wahrheit oft ein guter. Nimm sie als Erinnerung an deinen Rhythmus, nicht als Bewertung.
 
 Neben der eigenen Neugier hat die Statistik einen zweiten Nutzen, der in Kapitel 8 steht: Sie ist, zusammen mit der Commit-Historie, ein Beleg dafür, wie ein Text entstanden ist.
@@ -68,7 +68,6 @@ Was du bekommst, ist deine Textsubstanz — und nur die. Nicht mitexportiert wer
 Deshalb lohnt sich ein einfacher Plan, den du durchhältst:
 
 - **Liegen deine Texte in einem Repository**, hast du die Sicherung schon. Sie ist so aktuell wie dein letzter Push, sie liegt in deinem GitHub-Konto, und sie bleibt dort, auch wenn du [bun.ink](http://bun.ink) nicht mehr benutzt.
-
 - **Liegen sie nicht in einem Repository** — bei High-Privacy-Bereichen liegen sie das nie —, bist du die Sicherung. Exportiere regelmässig und lege das Archiv woandershin (Kapitel 9).
 
 Und eine Kleinigkeit, die Ärger spart: Ein gesperrter verschlüsselter Bereich lässt sich nicht exportieren. Entsperre zuerst, sonst bricht [bun.ink](http://bun.ink) ab.
