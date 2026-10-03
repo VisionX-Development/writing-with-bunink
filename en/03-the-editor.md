@@ -5,12 +5,12 @@ slug: the-editor
 description: How to write, format, and save in the editor — and speed things up with snippets.
 lang: en
 status: translated
-updated: 2026-08-21
+updated: 2026-10-03
 source: de/03-der-editor.md
-source_hash: b36d2f126e3a48b595e718709888c337a6ba95ee3a16b96a72ed3e3e856d498d
+source_hash: e885e2a1f489d61fce2b4169a99e27b2e8d527daefafb5e0846d88f3e81761a5
 ---
 
-# **The Writer**
+# **The Editor**
 
 The Writer is the surface where you actually write. This chapter shows you how to format text, work on several documents at once, save, and see what you've changed.
 
@@ -20,11 +20,18 @@ What you see is formatted text. What gets saved is Markdown — a plain text for
 
 The quickest way to format is as you type. A `#` at the start of a line makes a heading, `##` a second-level one. A `-` starts a bullet list, `1.` a numbered list, `>` a quote. Asterisks around a word make it italic, double asterisks bold.
 
-If that's too much syntax for you: select a passage, and a small bar appears above the selection with **Bold**, **Italic**, **Strikethrough**, **Inline code**, **Heading 1** through **Heading 3**, **Bullet list**, **Numbered list** and **Quote**. The same commands live in the **Format** button in the toolbar.
+If that's too much syntax for you, use the **Format** button in the toolbar. It gathers every command in four groups:
+
+- **Text:** **Bold**, **Italic**, **Strikethrough** and **Inline code**.
+- **Paragraph:** **Heading 1** through **Heading 3**, **Bullet list**, **Numbered list**, **Quote** and **Code block**. A code block shows text in a fixed-width font inside a frame; if a language is given, such as `python`, it appears at the top left of the block. A second click on the same entry turns it back into an ordinary paragraph.
+- **Display:** **Line break** starts a new line within the same paragraph, with no space in between — the same as Shift+Enter. **Line spacing** switches between **Tight**, **Compact**, **Normal** and **Wide**; the setting applies to every document and never ends up in the file, because Markdown has no notion of line spacing. **Markdown source** shows the document exactly as it is saved: with every character, the metadata and the link addresses. This view is read-only; **Back to editor** takes you back to writing.
+- **Document:** **Insert metadata** and **Insert note** (both explained in chapter 11), plus **Show line breaks**.
+
+Sometimes a line breaks in the middle of a paragraph even though there would be room on the right. Usually there's a hard line break behind it, which has no character of its own in the text. **Show line breaks** makes it visible as ↵, and you delete it like any other character. Simple line breaks that exist only in the file and count as spaces everywhere are highlighted in colour. A second click on the entry hides both again.
 
 You won't find underlining. Markdown doesn't have it, and bun.ink doesn't offer anything that would be lost again on saving.
 
-The bar above the selection can be turned off if it bothers you — in the settings under **Editor**, at **Formatting bubble**.
+When you select a passage, a small bar appears next to it: the formatting bubble. To begin with it offers **Bold**, **Italic**, **Strikethrough** and **Inline code**. You choose which commands it shows in the settings under **Editor**, at **Formatting bubble** — every format from the **Text** and **Paragraph** groups is available, plus **Insert metadata** and **Insert note**. That's also where you can turn the bubble off entirely if it bothers you; the **Format** button stays either way.
 
 ## Several documents in tabs
 
@@ -36,7 +43,7 @@ On a phone, bun.ink shows a more compact selector instead of the tab bar — the
 
 ## Saving
 
-You save with a keystroke: Ctrl+S by default, Cmd+S on a Mac. You can change the shortcut to something else in the settings under **Editor**, at **Save shortcut**.
+You save with a keystroke: Ctrl+S by default, Cmd+S on a Mac. You can change the shortcut to something else in the settings under **Editor**, in the **Shortcuts** section at **Save**.
 
 As long as a document has unsaved changes, its tab is marked. If you try to leave the page, bun.ink warns you first.
 
