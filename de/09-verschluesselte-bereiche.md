@@ -1,5 +1,5 @@
 ---
-title: Verschlüsselte Bereiche
+title: Verschlüsselte Bereiche -Sicherheit für deine Inhalte
 chapter: 9
 slug: verschluesselte-bereiche
 slug_en: encrypted-areas
@@ -9,7 +9,7 @@ status: draft
 updated: 2026-09-21
 ---
 
-# Verschlüsselte Bereiche
+# Verschlüsselte Bereiche - Sicherheit für deine Inhalte
 
 Kapitel 2 hat gezeigt, wie du einen High-Privacy-Bereich anlegst und entsperrst. Dieses Kapitel beantwortet die Frage dahinter: Wovor schützt dich das eigentlich, wovor nicht, und was gibst du dafür auf. Am Ende sollst du entscheiden können, welche deiner Texte in so einen Bereich gehören — und welche dort nur im Weg liegen.
 
@@ -48,13 +48,9 @@ Und er schützt nicht vor dir selbst. Die häufigste Art, Texte in einem High-Pr
 In einem High-Privacy-Bereich fällt fast alles weg, was die Kapitel 4 bis 8 beschreiben. Das ist kein Mangel, sondern die Folge davon, dass der Server den Text nicht kennt:
 
 - **Kein GitHub.** Ein High-Privacy-Ordner wird nie übertragen, ein High-Privacy-Projekt lässt sich gar nicht erst verknüpfen. Damit gibt es dort auch keine Branches, keine Commits, keine Pull Requests und keine Historie im Repository.
-
 - **Kein Lektorat über Pull Requests.** Die Zusammenarbeit aus Kapitel 7 läuft vollständig über GitHub. Wer deinen verschlüsselten Text lesen soll, bekommt ihn anders — exportiert, und dann ausserhalb von [bun.ink](http://bun.ink).
-
 - **Keine Agenten.** Ein Agent liest das Repository. Was dort nicht ankommt, kann er nicht lesen, nicht korrigieren und nicht verraten. Für Texte, die kein Modell sehen soll, ist das genau das gewünschte Verhalten (Kapitel 8).
-
 - **Keine Suche, keine Statistik im gesperrten Zustand.** Die Suche überspringt gesperrte Dokumente, und die Statistik zählt sie mit null Wörtern. Wundere dich nicht über einen Einbruch in der Kurve — entsperre und sieh noch einmal nach.
-
 - **Kein Export, solange gesperrt ist.** Ein Export würde sonst unlesbaren Text enthalten, deshalb bricht [bun.ink](http://bun.ink) ihn ab.
 
 ## Was hineingehört — und was nicht
@@ -74,11 +70,8 @@ Bei einem normalen Projekt liegt eine zweite Fassung deiner Texte in deinem Repo
 Also machst du sie selbst:
 
 1. **Entsperren, dann exportieren.** Ordner oder Projekt über das Kontextmenü als ZIP herausschreiben (Kapitel 2).
-
 2. **Regelmässig, nicht einmal.** Nach jedem Arbeitsabschnitt, an dem dir etwas liegt. Ein Export vom letzten Sommer ist ein Andenken, keine Sicherung.
-
 3. **An einen Ort, der nicht dasselbe Gerät ist.** Eine verschlüsselte Festplatte, ein verschlüsseltes Archiv in einer Cloud, ein Datenträger im Schrank.
-
 4. **Passphrase und Wiederherstellungsschlüssel getrennt davon.** Beides zusammen an einem Ort ist eine unverschlossene Tür mit Schild daneben.
 
 Dass diese vier Punkte Arbeit sind, ist der ehrliche Teil dieses Kapitels. Ein Bereich, den niemand ausser dir öffnen kann, ist eben auch ein Bereich, für den niemand ausser dir sorgt.
