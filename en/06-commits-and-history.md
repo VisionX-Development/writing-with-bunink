@@ -5,9 +5,9 @@ slug: commits-and-history
 description: How your changes become a commit, how you get it to GitHub, and where to read back the history of your text.
 lang: en
 status: translated
-updated: 2026-08-21
+updated: 2026-10-03
 source: de/06-commits-und-historie.md
-source_hash: 1be6e25fca50bf6869b4ea57b0faaba9a3eec427332944a6efb43fb43ceb9f12
+source_hash: bf751cb979b5adc16855b4d6f817be34fc661a6104e088f20e02a63f5b0a57b0
 ---
 
 # **Commits and history**
@@ -22,15 +22,15 @@ The difference from saving matters. Saving secures your current text. A commit a
 
 ## Seeing what has changed
 
-Before you commit, it's worth a look at the list. In the GitHub section of the sidebar, **Changes** shows what's different since the last commit. Each file is marked as **New**, **Changed** or **Deleted**.
+Before you commit, it's worth a look at the list. In the GitHub section of the sidebar, **Changes** shows what's different since the last commit. Each file is marked as **New locally**, **Changed locally** or **Deleted locally**.
 
 With **Open diff against GitHub** you see exactly what changed in a given file — the same side-by-side comparison as in change mode, just against the state in the repository instead of against your last save point.
 
-**Refresh changes** fetches the state fresh from GitHub. If nothing is pending, the list says exactly that.
+[bun.ink](http://bun.ink) fetches the state from GitHub by itself as soon as you open the GitHub section; while it loads, a spinner turns. If nothing is pending, the list says exactly that.
 
 ## Committing and pushing
 
-**Push to GitHub...** opens the dialog. It has three parts:
+Everything runs through one button: **Sync with GitHub...**. It first saves your open documents, then fetches whatever is new on GitHub (see below), and finally opens the commit dialog. That dialog has three parts:
 
 1. **Files** — you choose what goes into this commit. You can deselect individual files and commit them separately later; at least one file has to be selected.
 2. **Commit message** — the note about this state. The field asks: "What was changed?"
@@ -38,21 +38,23 @@ With **Open diff against GitHub** you see exactly what changed in a given file �
 
 About the message: half a sentence is enough, as long as it's meaningful. "Shortened chapter 3, cut the dialogue on page 4" will help you six months from now; "changes" never will. Write what you changed, not that you changed something.
 
-If GitHub has picked up new changes in the meantime, [bun.ink](http://bun.ink) blocks the push and asks you to sync first. That's not an error but a safeguard against overwriting someone else's work.
+Because the button fetches first and commits second, your push can't overwrite someone else's work: whatever is new on GitHub has already been brought in before your commit goes out. If there's nothing to commit, [bun.ink](http://bun.ink) tells you that you're already up to date with GitHub. On a branch, the last step is called **Save to branch** (chapter 5).
 
 ## Fetching changes from GitHub
 
 The other direction lives under **Incoming from GitHub**. Each file is marked as **New on GitHub**, **Changed on GitHub** or **Removed on GitHub**.
 
-**Sync with GitHub...** brings these changes in. Whatever was changed on only one side, [bun.ink](http://bun.ink) takes over automatically. For files that were changed on both sides, you decide file by file — **Use GitHub version**, **Keep my version** or **Keep both as separate files**.
+**Sync with GitHub...** brings these changes in before moving on to the commit. Whatever was changed on only one side, [bun.ink](http://bun.ink) takes over automatically. For files that were changed on both sides, you decide file by file — **Use GitHub version**, **Keep my version** or **Keep both as separate files**. If you cancel at this point, the whole process ends and nothing is committed.
 
 If the comparison shows no visible difference, it's usually down to spaces or line endings; [bun.ink](http://bun.ink) tells you so.
 
-There's also **Load files from GitHub** for the simple case where you only want to fetch and don't need to resolve anything. [bun.ink](http://bun.ink) blocks this as long as you have pending changes of your own — commit and push those first. It likewise speaks up if there are no Markdown or text files in the repository; your local state then stays unchanged.
+## Reading the history: the commit browser
 
-## Where the history is (not yet)
+In the **Changes** section of the sidebar you'll find the **Commits** list: the commits of the current branch, each with its message and date. **Load more commits** takes you further back.
 
-An honest disclosure here: [bun.ink](http://bun.ink) doesn't show you the list of your commits yet. The feature is planned, though, and coming soon. Until then, you read the history of your text on [github.com](http://github.com) in the repository itself — there you see every commit, its message, its date and the associated changes line by line.
+Every commit carries two toggles, **A** and **B**. A is the older side, B the newer one – and B can also be your **Working draft**, the text as it stands in the editor right now, saved or not. When you open it, A is the first commit of the branch and B the latest. In the header of the section you swap A and B or reset both to that selection. The comparison always covers the document you currently have open.
+
+The commit browser is available for projects linked to a repository – not for high-privacy projects (chapter 9). How to use it to trace how a text came about is shown in the blog post [The Commit Browser](https://bun.ink/blog/browsing-your-commit-history). What a commit changed across all files at once, you can see on [github.com](http://github.com) in the repository.
 
 What [bun.ink](http://bun.ink) does use from the history is the activity: the writing statistics evaluate the commits of recent months and show you which days you worked on.
 
