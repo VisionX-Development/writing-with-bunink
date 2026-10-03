@@ -83,11 +83,11 @@ Below that are **Log out** and **Delete account**.
 
 **Security logout** logs you out automatically after a period without activity. You switch it on with a tick and choose the inactivity period: 2, 5, 10, 15, 30 or 60 minutes. Shortly before logging out, a countdown runs. [bun.ink](http://bun.ink) saves any open changes to your account beforehand — not to GitHub — and removes the cached content from this browser, exactly as with a normal logout.
 
-### GitHub, Writer and Help
+### GitHub, Editor and Help
 
 Under **GitHub** you can see your connected GitHub accounts, connect further ones and disconnect existing ones. What this connection does is covered in the chapter on GitHub.
 
-Under **Writer** are the writing settings: **Jump marks**, **Formatting bubble**, **Typewriter scrolling (Zen mode)**, the stealth key and the keyboard shortcuts for **Save** and **Zen mode**. The Writer chapter explains them in context.
+Under **Editor** are the writing settings: **Jump marks**, **Formatting bubble**, **Typewriter scrolling (Zen mode)**, the stealth key and the keyboard shortcuts for **Save** and **Zen mode**. The Writer chapter explains them in context.
 
 Under **Help** there's a contact form — you choose a topic and write your message, and the reply comes by email. You can also restart the guided tour through the app from here.
 
