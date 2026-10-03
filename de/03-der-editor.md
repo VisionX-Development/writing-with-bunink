@@ -6,7 +6,7 @@ slug_en: the-editor
 description: Wie du im Editor schreibst, formatierst, speicherst und mit Snippets schneller wirst.
 lang: de
 status: draft
-updated: 2026-08-21
+updated: 2026-10-03
 ---
 
 
@@ -21,11 +21,18 @@ Was du siehst, ist formatierter Text. Was gespeichert wird, ist Markdown — ein
 
 Am schnellsten formatierst du direkt beim Tippen. `#` am Zeilenanfang macht eine Überschrift, `##` eine der zweiten Ebene. `-` beginnt eine Aufzählung, `1.` eine nummerierte Liste, `>` ein Zitat. Sternchen um ein Wort machen es kursiv, doppelte Sternchen fett.
 
-Wenn dir das zu viel Syntax ist: Markier eine Textstelle, und über der Auswahl erscheint eine kleine Leiste mit **Fett**, **Kursiv**, **Durchgestrichen**, **Inline-Code**, **Überschrift 1** bis **Überschrift 3**, **Aufzählung**, **Nummerierte Liste** und **Zitat**. Dieselben Befehle liegen im **Format**-Knopf in der Werkzeugleiste.
+Wenn dir das zu viel Syntax ist, nimm den **Format**-Knopf in der Werkzeugleiste. Er sammelt alle Befehle in vier Gruppen:
+
+- **Text:** **Fett**, **Kursiv**, **Durchgestrichen** und **Inline-Code**.
+- **Absatz:** **Überschrift 1** bis **Überschrift 3**, **Aufzählung**, **Nummerierte Liste**, **Zitat** und **Code-Block**. Ein Code-Block zeigt Text in fester Zeichenbreite und mit Rahmen; ist eine Sprache angegeben, etwa `python`, steht sie oben links am Block. Ein zweiter Klick auf denselben Eintrag macht wieder einen gewöhnlichen Absatz daraus.
+- **Darstellung:** **Zeilenumbruch** beginnt eine neue Zeile im selben Absatz, ohne Abstand dazwischen — dasselbe wie Shift+Enter. **Zeilenabstand** stellt zwischen **Eng**, **Kompakt**, **Normal** und **Weit** um; die Einstellung gilt für alle Dokumente und landet nie in der Datei, weil Markdown keinen Zeilenabstand kennt. **Markdown-Quelltext** zeigt das Dokument so, wie es gespeichert wird: mit allen Zeichen, Metadaten und Link-Adressen. Diese Ansicht ist nur zum Lesen; **Zurück zum Editor** bringt dich wieder zum Schreiben.
+- **Dokument:** **Metadaten einfügen** und **Notiz einfügen** (beides erklärt Kapitel 11) sowie **Zeilenumbrüche anzeigen**.
+
+Manchmal bricht eine Zeile mitten im Absatz um, obwohl rechts noch Platz wäre. Meist steckt ein harter Zeilenumbruch dahinter, der im Text kein eigenes Zeichen hat. Mit **Zeilenumbrüche anzeigen** wird er als ↵ sichtbar, und du löschst ihn wie jedes andere Zeichen. Einfache Umbrüche, die nur in der Datei stehen und überall als Leerzeichen gelten, sind dabei farbig unterlegt. Ein zweiter Klick auf den Eintrag blendet beides wieder aus.
 
 Unterstreichen findest du nicht. Markdown kennt es nicht, und bun.ink bietet nichts an, was es beim Speichern wieder verlieren würde.
 
-Die Leiste über der Auswahl lässt sich abschalten, wenn sie dich stört — in den Einstellungen unter **Editor**, bei **Formatierungs-Bubble**.
+Markierst du eine Textstelle, erscheint daneben eine kleine Leiste, die Formatierungs-Bubble. Sie bietet zunächst **Fett**, **Kursiv**, **Durchgestrichen** und **Inline-Code** an. Welche Befehle sie zeigt, wählst du in den Einstellungen unter **Editor** bei **Formatierungs-Bubble** aus — zur Wahl stehen alle Formate der Gruppen **Text** und **Absatz**, dazu **Metadaten einfügen** und **Notiz einfügen**. Dort lässt sich die Bubble auch ganz abschalten, wenn sie dich stört; der **Format**-Knopf bleibt in jedem Fall.
 
 ## Mehrere Dokumente in Tabs
 
@@ -37,7 +44,7 @@ Auf dem Handy zeigt bun.ink statt der Tab-Leiste eine kompaktere Auswahl — der
 
 ## Speichern
 
-Gespeichert wird auf Tastendruck: standardmässig Strg+S, auf dem Mac Cmd+S. Das Kürzel kannst du in den Einstellungen unter **Editor** bei **Speichern-Shortcut** auf etwas anderes legen.
+Gespeichert wird auf Tastendruck: standardmässig Strg+S, auf dem Mac Cmd+S. Das Kürzel kannst du in den Einstellungen unter **Editor** im Abschnitt **Shortcuts** bei **Speichern** auf etwas anderes legen.
 
 Solange ein Dokument ungespeicherte Änderungen hat, ist sein Tab markiert. Versuchst du, die Seite zu verlassen, warnt bun.ink dich vorher.
 
