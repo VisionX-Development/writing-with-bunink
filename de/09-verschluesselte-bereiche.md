@@ -1,5 +1,5 @@
 ---
-title: Verschlüsselte Bereiche -Sicherheit für deine Inhalte
+title: Verschlüsselte Bereiche – Sicherheit für deine Inhalte
 chapter: 9
 slug: verschluesselte-bereiche
 slug_en: encrypted-areas
@@ -9,7 +9,7 @@ status: draft
 updated: 2026-09-21
 ---
 
-# Verschlüsselte Bereiche - Sicherheit für deine Inhalte
+# Verschlüsselte Bereiche – Sicherheit für deine Inhalte
 
 Kapitel 2 hat gezeigt, wie du einen High-Privacy-Bereich anlegst und entsperrst. Dieses Kapitel beantwortet die Frage dahinter: Wovor schützt dich das eigentlich, wovor nicht, und was gibst du dafür auf. Am Ende sollst du entscheiden können, welche deiner Texte in so einen Bereich gehören — und welche dort nur im Weg liegen.
 

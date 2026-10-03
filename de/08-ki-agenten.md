@@ -1,5 +1,5 @@
 ---
-title: KI-Tools und deine Texten
+title: KI-Tools und deine Texte
 chapter: 8
 slug: ki-agenten
 slug_en: ai-agents
@@ -17,7 +17,7 @@ Weil deine Texte in einem Repository liegen, kann eine Software daran arbeiten, 
 
 Ein KI-Agent ist ein Programm mit einem Sprachmodell dahinter, das nicht nur antwortet, sondern arbeitet: Es öffnet die Dateien in deinem Repository, liest sie, ändert etwas, legt einen Branch an und öffnet einen Pull Request. Was danach passiert, entscheidest du — genau wie beim Lektorat in Kapitel 7.
 
-Der Unterschied zu einem Chatfenster ist der Zugriff. Ein Chat sieht das, was du hineinkopierst. Ein Agent sieht dein Repository und kann darin schreiben. Das macht ihn nützlich für Arbeiten, die den ganzen Text betreffen — und es ist der Grund, warum du ihm nicht dieselbe Freiheit gibst wie dir selbst. Richtig eingesetzt ist ein KI-Agent ein Werkzeug der deine Texte weiter bringen kann.
+Der Unterschied zu einem Chatfenster ist der Zugriff. Ein Chat sieht das, was du hineinkopierst. Ein Agent sieht dein Repository und kann darin schreiben. Das macht ihn nützlich für Arbeiten, die den ganzen Text betreffen — und es ist der Grund, warum du ihm nicht dieselbe Freiheit gibst wie dir selbst. Richtig eingesetzt ist ein KI-Agent ein Werkzeug, das deine Texte weiterbringen kann.
 
 Drei Dinge, die ein Agent hier ausdrücklich nicht ist:
 

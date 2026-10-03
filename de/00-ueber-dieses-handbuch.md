@@ -27,7 +27,7 @@ Die Kapitel 01 bis 03 bringen dich zum Schreiben — Konto, Editor, und wie Proj
 
 Die Kapitel 04 bis 07 sind der eigentliche Kern: Was passiert, wenn deine Texte in einem Repository liegen? Ein Repository verbinden, dann Branches als Fassungen, dann Commits und Historie, zuletzt Pull Requests für die Zusammenarbeit mit dem Lektorat. Diese vier bauen aufeinander auf, lies sie der Reihe nach.
 
-Ab Kapitel 08 wird nachgeschlagen statt gelesen: KI-Agenten, verschlüsselte Bereiche, Statistik und Export. Diese Kapitel stehen für sich.
+Ab Kapitel 08 wird nachgeschlagen statt gelesen: KI-Tools, verschlüsselte Bereiche, Statistik und Export, Metadaten und Notizen. Diese Kapitel stehen für sich.
 
 Die vollständige Übersicht steht in der Inhaltsangabe des Repositorys.
 
