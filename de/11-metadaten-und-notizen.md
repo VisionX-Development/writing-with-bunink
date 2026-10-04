@@ -3,7 +3,8 @@ title: Metadaten und Notizen
 chapter: 11
 slug: metadaten-und-notizen
 slug_en: metadata-and-notes
-description: Wie du einem Dokument Metadaten mitgibst und dir Notizen an den Text heftest, die in der fertigen Ansicht unsichtbar bleiben.
+description: Wie du einem Dokument Metadaten mitgibst und dir Notizen an den Text heftest, die in der fertigen Ansicht
+unsichtbar bleiben.
 lang: de
 status: draft
 updated: 2026-09-30
@@ -22,21 +23,23 @@ Beide stehen in derselben Datei wie dein Text, beide werden mit ihm gespeichert 
 
 ## Metadaten: der Block am Dateianfang
 
-Metadaten stehen in einem Block ganz oben in der Datei, zwischen zwei Zeilen mit drei Bindestrichen. Dieser Block heisst **Frontmatter**. Jede Zeile ist ein Feld mit Namen und Wert:
+Metadaten stehen in einem Block ganz oben in der Datei, zwischen zwei Zeilen mit drei Bindestrichen. Dieser Block heisst **Frontmatter**. Jede Zeile ist ein Feld mit Namen und Wert:                                                             
 
-```markdown
----
+(Markdown)
+
 title: Das zweite Kapitel
+
 description: In dem Anna die Stadt verlässt.
+
 status: draft
----
-```
 
-Welche Felder es gibt, bestimmt nicht [bun.ink](http://bun.ink), sondern das Programm, das die Datei später liest. Ein Website-Generator wie Hugo, Jekyll oder Astro erwartet meist `title` und `date`, dieses Handbuch benutzt zusätzlich `chapter` und `status`.
+(Markdown)
 
-Halte dich an eine Zeile pro Feld nach dem Muster `name: wert`.
+Welche Felder es gibt, bestimmt nicht [bun.ink](http://bun.ink), sondern das Programm, das die Datei später liest. Ein Website-Generator wie Hugo, Jekyll oder Astro erwartet meist `title` und `date`, dieses Handbuch benutzt zusätzlich `chapter` und `status`. 
 
-Auf GitHub erscheint der Block in der Dateiansicht als kleine Tabelle über dem Text. Im Editor von [bun.ink](http://bun.ink) ist er ein eigener Kasten mit der Beschriftung **Metadaten**.
+Halte dich an eine Zeile pro Feld nach dem Muster `name: wert`.                                                               
+
+Auf GitHub erscheint der Block in der Dateiansicht als kleine Tabelle über dem Text. Im Editor von [bun.ink](http://bun.ink) ist er ein eigener Kasten mit der Beschriftung **Metadaten**.  
 
 ## Metadaten einfügen
 
@@ -65,18 +68,16 @@ Eine Notiz ist eine Anmerkung, die du dir an eine bestimmte Stelle heftest. Im E
 ### Eine Notiz einfügen
 
 1. Setz den Cursor in den Absatz, zu dem die Notiz gehört.
-2. Klick in der Werkzeugleiste auf **Format** und in der Gruppe **Dokument** auf **Notiz einfügen**.
-3. Die Notiz erscheint als Karte, der Cursor steht darin. Schreib deine Anmerkung hinein.
 
 Die Notiz kommt immer hinter den ganzen Absatz, auch wenn dein Cursor mitten in einem Satz stand. Steht der Cursor in einer Aufzählung oder einem Zitat, kommt sie hinter die ganze Aufzählung oder das ganze Zitat. So zerschneidet eine Notiz nie deinen Text.
 
-Um aus der Notiz zurück in den Text zu kommen, klick einfach in den nächsten Absatz oder geh mit der Pfeiltaste nach unten.
+Um aus der Notiz zurück in den Text zu kommen, klick einfach in den nächsten Absatz oder geh mit der Pfeiltaste nach  unten.
 
 ### Schneller mit dem Tastenkürzel
 
-Für Notizen gibt es ein Tastenkürzel, standardmässig **Ctrl+N** (die Control-Taste, auch auf dem Mac). Es tut dasselbe wie **Notiz einfügen** im Menü.
+Für Notizen gibt es ein Tastenkürzel, standardmässig \*\*Ctrl+N\*\* (die Control-Taste, auch auf dem Mac). Es tut dasselbe wie **Notiz einfügen** im Menü.
 
-Unter Windows und Linux öffnet der Browser mit Strg+N ein neues Fenster und gibt die Taste nicht weiter. Leg das Kürzel dort auf eine andere Kombination: In den Einstellungen unter **Editor**, im Abschnitt **Shortcuts** bei **Notiz einfügen**, klick auf **Shortcut ändern** und drück die gewünschte Kombination. **Löschen** schaltet das Kürzel ganz ab; das Menü funktioniert weiterhin.
+Unter Windows und Linux öffnet der Browser mit Strg+N ein neues Fenster und gibt die Taste nicht weiter. Leg das Kürzedort auf eine andere Kombination: In den Einstellungen unter **Editor**, bei **Notiz-Shortcut**, klick auf **Shortcut ändern** und drück die gewünschte Kombination. **Löschen** schaltet das Kürzel ganz ab; das Menü funktioniert weiterhin.                                                                                                                          
 
 ### Eine Notiz entfernen
 
@@ -84,23 +85,29 @@ Klick auf das **×** in der Kopfzeile der Notiz. Sie verschwindet vollständig, 
 
 ### Wo die Notiz gespeichert wird
 
-Die Notiz ist Teil deines Dokuments. In der Datei steht sie als sogenannter HTML-Kommentar, eine Form, die jedes Markdown-Programm beim Anzeigen überspringt:
+Die Notiz ist Teil deines Dokuments. In der Datei steht sie als sogenannter HTML-Kommentar, eine Form, die jedes Markdown-Programm beim Anzeigen überspringt:         
 
-```markdown
-Anna stand am Fenster und zählte die Züge.
+(Markdown) 
+
+Anna stand am Fenster und zählte die Züge.                                                                                                          
 
 <!-- bun.ink:note
 Wie viele Züge fahren nachts wirklich? Fahrplan prüfen.
 -->
 
 Der letzte kam um Viertel nach zwei.
-```
+
+(Markdown)
 
 Daraus folgt:
 
-- Die Notiz wird gespeichert, wenn du das Dokument speicherst, und wandert mit ihrer Stelle, wenn du den Text davor oder danach umschreibst.
+- Die Notiz wird gespeichert, wenn du das Dokument speicherst, und wandert mit ihrer Stelle, wenn du den Text davor oder
 
-- Auf einem Branch geht sie mit dem nächsten Commit nach GitHub, auf dem Default-Branch mit dem Speichern in [bun.ink](http://bun.ink). Sie braucht keinen eigenen Speicherort und geht nicht verloren, wenn du dich abmeldest.
+danach umschreibst.
+
+- Auf einem Branch geht sie mit dem nächsten Commit nach GitHub, auf dem Default-Branch mit dem Speichern in [bun.ink](http://bun.ink). Sie
+
+braucht keinen eigenen Speicherort und geht nicht verloren, wenn du dich abmeldest.
 
 - Die Wortzählung und die Schreibstatistik zählen Notizen nicht mit.
 - Die Suche findet Notizen. So kannst du etwa alle offenen „Quelle nachtragen“ in einem Projekt aufspüren.

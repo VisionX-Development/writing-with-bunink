@@ -55,7 +55,7 @@ Zwei Dinge, über die man sonst stolpert:
 - **Gesperrte High-Privacy-Dokumente zählen null Wörter** (Kapitel 9). Ein plötzlicher Einbruch in der Statistik bedeutet oft nur, dass ein verschlüsselter Bereich gerade gesperrt ist.
 - **Zahlen sind kein Urteil.** Ein Tag, an dem du dreihundert Wörter gestrichen hast, ist in der Statistik ein schlechter und in Wahrheit oft ein guter. Nimm sie als Erinnerung an deinen Rhythmus, nicht als Bewertung.
 
-Neben der eigenen Neugier hat die Statistik einen zweiten Nutzen, den der Blogbeitrag [Deine Arbeit beweisen](https://bun.ink/blog/proving-you-wrote-it-yourself) ausführt: Sie ist, zusammen mit der Commit-Historie, ein Beleg dafür, wie ein Text entstanden ist.
+Neben der eigenen Neugier hat die Statistik einen zweiten Nutzen, der in Kapitel 8 steht: Sie ist, zusammen mit der Commit-Historie, ein Beleg dafür, wie ein Text entstanden ist.
 
 ## Exportieren
 
