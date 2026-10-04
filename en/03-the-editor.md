@@ -25,7 +25,7 @@ If that's too much syntax for you, use the **Format** button in the toolbar. It 
 - **Text:** **Bold**, **Italic**, **Strikethrough** and **Inline code**.
 - **Paragraph:** **Heading 1** through **Heading 3**, **Bullet list**, **Numbered list**, **Quote** and **Code block**. A code block shows text in a fixed-width font and with a border; if a language is specified, such as `python`, it appears at the top left of the block. Clicking the same entry a second time turns it back into an ordinary paragraph.
 - **Display:** **Line break** starts a new line within the same paragraph, with no spacing in between — the same as Shift+Enter. **Line spacing** switches between **Tight**, **Compact**, **Normal** and **Wide**; the setting applies to all documents and never ends up in the file, because Markdown has no concept of line spacing. **Markdown source** shows the document exactly as it is saved: with all characters, metadata and link addresses. This view is read-only; **Back to editor** takes you back to writing.
-- **Document:** **Insert metadata** and **Insert note** (both explained in Chapter 11) as well as **Show line breaks**.
+- **Document:** **Insert metadata** and **Insert note** (both explained in Chapter 11), **Insert table** as well as **Show line breaks**. **Insert table** places an empty table with three columns, a header row and two rows after the paragraph at the cursor. Tab moves you from cell to cell; after the last cell, Tab adds a new row. If the table is at the end of the document, the down arrow takes you from its last row into a new paragraph below.
 
 You won't find underlining. Markdown doesn't have it, and bun.ink doesn't offer anything that would be lost again when saving.
 
