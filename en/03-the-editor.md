@@ -25,7 +25,7 @@ If that's too much syntax for you, use the **Format** button in the toolbar. It 
 - **Text:** **Bold**, **Italic**, **Strikethrough** and **Inline code**.
 - **Paragraph:** **Heading 1** through **Heading 3**, **Bullet list**, **Numbered list**, **Quote** and **Code block**. A code block shows text in a fixed-width font and with a border; if a language is specified, such as `python`, it appears at the top left of the block. Clicking the same entry a second time turns it back into an ordinary paragraph.
 - **Display:** **Line break** starts a new line within the same paragraph, with no spacing in between — the same as Shift+Enter. **Line spacing** switches between **Tight**, **Compact**, **Normal** and **Wide**; the setting applies to all documents and never ends up in the file, because Markdown has no concept of line spacing. **Markdown source** shows the document exactly as it is saved: with all characters, metadata and link addresses. This view is read-only; **Back to editor** takes you back to writing.
-- **Document:** **Insert metadata** and **Insert note** (both explained in Chapter 11), **Insert table** as well as **Show line breaks**. **Insert table** places an empty table with three columns, a header row and two rows after the paragraph at the cursor. Tab moves you from cell to cell; after the last cell, Tab adds a new row. If the table is at the end of the document, the down arrow takes you from its last row into a new paragraph below.
+- **Document:** **Insert metadata** and **Insert note** (both explained in Chapter 11), **Insert table** and **Remove table** (see “Tables” below) as well as **Show line breaks**.
 
 You won't find underlining. Markdown doesn't have it, and bun.ink doesn't offer anything that would be lost again when saving.
 
@@ -46,6 +46,18 @@ Unlike `#` or asterisks, line breaks have no typing shortcut: two spaces or a `\
 You never type a soft break yourself. It comes from files created elsewhere — in another editor, by an AI agent, or in a pull request. Some writers put every sentence on its own line, so that a commit shows exactly the sentence that changed rather than the whole paragraph. To Markdown, such a line ending is a space: on GitHub, on a blog and in every export, the paragraph flows as continuous text. bun.ink shows it the same way, but keeps every line ending and saves the file back exactly as it was. A commit then shows only what you actually changed.
 
 If a line breaks in the middle of a paragraph even though there's still room to the right, there's usually a hard break behind it, which otherwise has no character of its own. Turn on **Format → Document → Show line breaks**: like the formatting marks in Word, ¶ appears at the end of every paragraph, ↵ at every hard break and ↩ at every soft one. The marks exist only on screen, never in the file. You delete an unwanted break like any other character; if you delete a ↩, the two lines are joined in the file too. Clicking the entry a second time hides the marks again.
+
+### Tables
+
+**Format → Document → Insert table** places an empty table with three columns, a header row and two rows after the paragraph at the cursor. Tab moves you from cell to cell; after the last cell, Tab adds a new row. You edit tables from other files the same way, and as long as you don't change a table, bun.ink saves it character for character as it was in the file.
+
+When the cursor is in a table, a bar appears above it:
+
+- **+ Row** inserts a new row below the row at the cursor, **+ Column** a new column to the right of the column at the cursor.
+- **− Row** and **− Column** delete the row or column the cursor is in. The header row can't be deleted, because a Markdown table needs one.
+- **×** removes the whole table, as does **Format → Document → Remove table**. Undo brings it back.
+
+You can't merge cells or align columns in bun.ink; Markdown has no merged cells. If the table is at the end of the document, the down arrow takes you from its last row into a new paragraph below.
 
 ## Several documents in tabs
 

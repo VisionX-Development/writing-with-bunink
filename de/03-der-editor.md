@@ -26,7 +26,7 @@ Wenn dir das zu viel Syntax ist, nimm den **Format**-Knopf in der Werkzeugleiste
 - **Text:** **Fett**, **Kursiv**, **Durchgestrichen** und **Inline-Code**.
 - **Absatz:** **Überschrift 1** bis **Überschrift 3**, **Aufzählung**, **Nummerierte Liste**, **Zitat** und **Code-Block**. Ein Code-Block zeigt Text in fester Zeichenbreite und mit Rahmen; ist eine Sprache angegeben, etwa `python`, steht sie oben links am Block. Ein zweiter Klick auf denselben Eintrag macht wieder einen gewöhnlichen Absatz daraus.
 - **Darstellung:** **Zeilenumbruch** beginnt eine neue Zeile im selben Absatz, ohne Abstand dazwischen — dasselbe wie Shift+Enter. **Zeilenabstand** stellt zwischen **Eng**, **Kompakt**, **Normal** und **Weit** um; die Einstellung gilt für alle Dokumente und landet nie in der Datei, weil Markdown keinen Zeilenabstand kennt. **Markdown-Quelltext** zeigt das Dokument so, wie es gespeichert wird: mit allen Zeichen, Metadaten und Link-Adressen. Diese Ansicht ist nur zum Lesen; **Zurück zum Editor** bringt dich wieder zum Schreiben.
-- **Dokument:** **Metadaten einfügen** und **Notiz einfügen** (beides erklärt Kapitel 11), **Tabelle einfügen** sowie **Zeilenumbrüche anzeigen**. **Tabelle einfügen** setzt hinter den Absatz am Cursor eine leere Tabelle mit drei Spalten, einer Kopfzeile und zwei Zeilen. Mit Tab springst du von Zelle zu Zelle; hinter der letzten Zelle hängt Tab eine neue Zeile an. Steht die Tabelle am Ende des Dokuments, führt Pfeil nach unten aus ihrer letzten Zeile in einen neuen Absatz darunter.
+- **Dokument:** **Metadaten einfügen** und **Notiz einfügen** (beides erklärt Kapitel 11), **Tabelle einfügen** und **Tabelle entfernen** (siehe «Tabellen» weiter unten) sowie **Zeilenumbrüche anzeigen**.
 
 Unterstreichen findest du nicht. Markdown kennt es nicht, und bun.ink bietet nichts an, was es beim Speichern wieder verlieren würde.
 
@@ -47,6 +47,18 @@ Anders als `#` oder Sternchen haben Zeilenumbrüche keine Tipp-Abkürzung: Zwei 
 Den weichen Umbruch tippst du nie selbst. Er steht in Dateien, die anderswo entstanden sind — in einem anderen Editor, von einem KI-Agenten oder in einem Pull Request. Manche schreiben jeden Satz auf eine eigene Zeile, damit ein Commit genau den geänderten Satz zeigt und nicht den ganzen Absatz. Für Markdown ist so ein Zeilenende ein Leerzeichen: Auf GitHub, im Blog und in jedem Export läuft der Absatz als Fliesstext durch. bun.ink zeigt ihn deshalb genauso, behält aber jedes Zeilenende und speichert die Datei so zurück, wie sie war. Ein Commit zeigt dann nur, was du tatsächlich geändert hast.
 
 Bricht eine Zeile mitten im Absatz um, obwohl rechts noch Platz wäre, steckt meist ein harter Umbruch dahinter, der sonst kein eigenes Zeichen hat. Schalte **Format → Dokument → Zeilenumbrüche anzeigen** ein: Wie die Formatierungszeichen in Word erscheinen ¶ am Ende jedes Absatzes, ↵ bei jedem harten und ↩ bei jedem weichen Umbruch. Die Zeichen stehen nur auf dem Bildschirm, nie in der Datei. Einen ungewollten Umbruch löschst du wie jedes andere Zeichen; löschst du ein ↩, rücken die beiden Zeilen auch in der Datei zusammen. Ein zweiter Klick auf den Eintrag blendet die Zeichen wieder aus.
+
+### Tabellen
+
+**Format → Dokument → Tabelle einfügen** setzt hinter den Absatz am Cursor eine leere Tabelle mit drei Spalten, einer Kopfzeile und zwei Zeilen. Mit Tab springst du von Zelle zu Zelle; hinter der letzten Zelle hängt Tab eine neue Zeile an. Tabellen aus anderen Dateien bearbeitest du genauso, und solange du eine Tabelle nicht änderst, speichert bun.ink sie Zeichen für Zeichen so, wie sie in der Datei stand.
+
+Steht der Cursor in einer Tabelle, erscheint darüber eine Leiste:
+
+- **+ Zeile** fügt unter der Zeile am Cursor eine neue ein, **+ Spalte** rechts von der Spalte am Cursor.
+- **− Zeile** und **− Spalte** löschen die Zeile bzw. Spalte, in der der Cursor steht. Die Kopfzeile lässt sich nicht löschen, denn eine Markdown-Tabelle braucht sie.
+- **×** entfernt die ganze Tabelle, ebenso **Format → Dokument → Tabelle entfernen**. Rückgängig holt sie zurück.
+
+Zellen verbinden oder Spalten ausrichten kannst du in bun.ink nicht; Markdown kennt verbundene Zellen nicht. Steht die Tabelle am Ende des Dokuments, führt Pfeil nach unten aus ihrer letzten Zeile in einen neuen Absatz darunter.
 
 ## Mehrere Dokumente in Tabs
 
