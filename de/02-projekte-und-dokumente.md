@@ -9,8 +9,6 @@ status: draft
 updated: 2026-08-21
 ---
 
-
-
 # **Projekte, Ordner und Dokumente**
 
 Bevor du schreibst, brauchst du einen Ort für den Text. Dieses Kapitel zeigt, wie Projekte, Ordner und Dokumente zusammenhängen, wie du bestehende Texte hineinholst und wieder herausbekommst, und was ein verschlüsselter Bereich ist.

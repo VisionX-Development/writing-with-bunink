@@ -9,8 +9,6 @@ status: draft
 updated: 2026-10-04
 ---
 
-
-
 # **Der Editor**
 
 Der Editor ist die Fläche, auf der du tatsächlich schreibst. Dieses Kapitel zeigt, wie du formatierst, mit mehreren Dokumenten gleichzeitig arbeitest, speicherst und siehst, was du geändert hast.

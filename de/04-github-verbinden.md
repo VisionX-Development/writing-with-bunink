@@ -9,8 +9,6 @@ status: draft
 updated: 2026-08-21
 ---
 
-
-
 # **GitHub verbinden**
 
 Bis hierher lagen deine Texte in [bun.ink](http://bun.ink). Ab jetzt können sie zusätzlich in deinem eigenen GitHub-Repository liegen — und damit eine nachvollziehbare Geschichte bekommen. Dieses Kapitel zeigt, wie du die Verbindung herstellst.

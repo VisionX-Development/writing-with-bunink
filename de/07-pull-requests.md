@@ -9,8 +9,6 @@ status: draft
 updated: 2026-09-17
 ---
 
-
-
 # **Pull Requests: Zusammenarbeit mit dem Lektorat**
 
 Bis hierhin hast du allein gearbeitet. Dieses Kapitel zeigt, wie eine zweite Person deinen Text überarbeitet — auf einem eigenen Branch, ohne deine Fassung zu berühren — und wie du am Ende jeden Vorschlag einzeln übernimmst, verwirfst oder mit einer eigenen Fassung beantwortest.

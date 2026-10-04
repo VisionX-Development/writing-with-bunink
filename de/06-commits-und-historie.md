@@ -9,8 +9,6 @@ status: draft
 updated: 2026-10-03
 ---
 
-
-
 # **Commits und Historie**
 
 Ein Repository merkt sich nicht jeden Tastendruck, sondern die Stände, die du bewusst festhältst. Dieses Kapitel zeigt, wie du so einen Stand erzeugst und wo du die entstandene Geschichte nachliest.

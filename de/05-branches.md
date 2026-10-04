@@ -9,8 +9,6 @@ status: draft
 updated: 2026-08-21
 ---
 
-
-
 # **Branches: Fassungen eines Textes**
 
 Manchmal willst du etwas ausprobieren, ohne den bestehenden Text anzutasten. Ein Branch ist genau das: eine zweite Fassung, die parallel läuft, bis du entscheidest, ob sie die richtige war.
