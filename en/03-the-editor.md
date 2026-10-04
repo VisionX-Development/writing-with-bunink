@@ -5,7 +5,7 @@ slug: the-editor
 description: How to write, format, and save in the editor — and speed things up with snippets.
 lang: en
 status: translated
-updated: 2026-10-03
+updated: 2026-10-04
 source: de/03-der-editor.md
 source_hash: e885e2a1f489d61fce2b4169a99e27b2e8d527daefafb5e0846d88f3e81761a5
 ---
@@ -27,11 +27,25 @@ If that's too much syntax for you, use the **Format** button in the toolbar. It 
 - **Display:** **Line break** starts a new line within the same paragraph, with no spacing in between — the same as Shift+Enter. **Line spacing** switches between **Tight**, **Compact**, **Normal** and **Wide**; the setting applies to all documents and never ends up in the file, because Markdown has no concept of line spacing. **Markdown source** shows the document exactly as it is saved: with all characters, metadata and link addresses. This view is read-only; **Back to editor** takes you back to writing.
 - **Document:** **Insert metadata** and **Insert note** (both explained in Chapter 11) as well as **Show line breaks**.
 
-Sometimes a line breaks in the middle of a paragraph even though there's still room to the right. Usually there's a hard line break behind it, which has no visible character in the text. With **Show line breaks** it becomes visible as ↵, and you can delete it like any other character. Simple breaks that exist only in the file and count as spaces everywhere are highlighted in colour. Clicking the entry a second time hides both again.
-
 You won't find underlining. Markdown doesn't have it, and bun.ink doesn't offer anything that would be lost again when saving.
 
 When you select a passage of text, a small bar appears next to it: the formatting bubble. By default it offers **Bold**, **Italic**, **Strikethrough** and **Inline code**. Which commands it shows is up to you — choose them in the settings under **Editor** at **Formatting bubble**. All the formats from the **Text** and **Paragraph** groups are available, plus **Insert metadata** and **Insert note**. You can also turn the bubble off entirely there if it gets in your way; the **Format** button stays in any case.
+
+### Paragraphs and line breaks
+
+A line can end in three ways, and each one means something different:
+
+| You press | What you get | In the file | With **Show line breaks** |
+|---|---|---|---|
+| Enter | a new paragraph | a blank line | ¶ at the end of the paragraph |
+| Shift+Enter or **Format → Display → Line break** | a new line within the same paragraph | two spaces at the end of the line | ↵ |
+| – | a soft break | a plain line ending | ↩ |
+
+Unlike `#` or asterisks, line breaks have no typing shortcut: two spaces or a `\` at the end of a line stay exactly that in the editor. For a break within a paragraph, press Shift+Enter; bun.ink writes the Markdown characters for it itself when you save.
+
+You never type a soft break yourself. It comes from files created elsewhere — in another editor, by an AI agent, or in a pull request. Some writers put every sentence on its own line, so that a commit shows exactly the sentence that changed rather than the whole paragraph. To Markdown, such a line ending is a space: on GitHub, on a blog and in every export, the paragraph flows as continuous text. bun.ink shows it the same way, but keeps every line ending and saves the file back exactly as it was. A commit then shows only what you actually changed.
+
+If a line breaks in the middle of a paragraph even though there's still room to the right, there's usually a hard break behind it, which otherwise has no character of its own. Turn on **Format → Document → Show line breaks**: like the formatting marks in Word, ¶ appears at the end of every paragraph, ↵ at every hard break and ↩ at every soft one. The marks exist only on screen, never in the file. You delete an unwanted break like any other character; if you delete a ↩, the two lines are joined in the file too. Clicking the entry a second time hides the marks again.
 
 ## Several documents in tabs
 

@@ -6,7 +6,7 @@ slug_en: the-editor
 description: Wie du im Editor schreibst, formatierst, speicherst und mit Snippets schneller wirst.
 lang: de
 status: draft
-updated: 2026-10-03
+updated: 2026-10-04
 ---
 
 
@@ -28,11 +28,25 @@ Wenn dir das zu viel Syntax ist, nimm den **Format**-Knopf in der Werkzeugleiste
 - **Darstellung:** **Zeilenumbruch** beginnt eine neue Zeile im selben Absatz, ohne Abstand dazwischen — dasselbe wie Shift+Enter. **Zeilenabstand** stellt zwischen **Eng**, **Kompakt**, **Normal** und **Weit** um; die Einstellung gilt für alle Dokumente und landet nie in der Datei, weil Markdown keinen Zeilenabstand kennt. **Markdown-Quelltext** zeigt das Dokument so, wie es gespeichert wird: mit allen Zeichen, Metadaten und Link-Adressen. Diese Ansicht ist nur zum Lesen; **Zurück zum Editor** bringt dich wieder zum Schreiben.
 - **Dokument:** **Metadaten einfügen** und **Notiz einfügen** (beides erklärt Kapitel 11) sowie **Zeilenumbrüche anzeigen**.
 
-Manchmal bricht eine Zeile mitten im Absatz um, obwohl rechts noch Platz wäre. Meist steckt ein harter Zeilenumbruch dahinter, der im Text kein eigenes Zeichen hat. Mit **Zeilenumbrüche anzeigen** wird er als ↵ sichtbar, und du löschst ihn wie jedes andere Zeichen. Einfache Umbrüche, die nur in der Datei stehen und überall als Leerzeichen gelten, sind dabei farbig unterlegt. Ein zweiter Klick auf den Eintrag blendet beides wieder aus.
-
 Unterstreichen findest du nicht. Markdown kennt es nicht, und bun.ink bietet nichts an, was es beim Speichern wieder verlieren würde.
 
 Markierst du eine Textstelle, erscheint daneben eine kleine Leiste, die Formatierungs-Bubble. Sie bietet zunächst **Fett**, **Kursiv**, **Durchgestrichen** und **Inline-Code** an. Welche Befehle sie zeigt, wählst du in den Einstellungen unter **Editor** bei **Formatierungs-Bubble** aus — zur Wahl stehen alle Formate der Gruppen **Text** und **Absatz**, dazu **Metadaten einfügen** und **Notiz einfügen**. Dort lässt sich die Bubble auch ganz abschalten, wenn sie dich stört; der **Format**-Knopf bleibt in jedem Fall.
+
+### Absätze und Zeilenumbrüche
+
+Eine Zeile kann auf drei Arten enden, und jede bedeutet etwas anderes:
+
+| Du drückst | Was entsteht | In der Datei | Mit **Zeilenumbrüche anzeigen** |
+|---|---|---|---|
+| Enter | ein neuer Absatz | eine Leerzeile | ¶ am Absatzende |
+| Shift+Enter oder **Format → Darstellung → Zeilenumbruch** | eine neue Zeile im selben Absatz | zwei Leerzeichen am Zeilenende | ↵ |
+| – | ein weicher Umbruch | ein einfaches Zeilenende | ↩ |
+
+Anders als `#` oder Sternchen haben Zeilenumbrüche keine Tipp-Abkürzung: Zwei Leerzeichen oder ein `\` am Zeilenende bleiben im Editor genau das, was sie sind. Den Umbruch im Absatz machst du mit Shift+Enter, die Markdown-Zeichen dafür schreibt bun.ink beim Speichern selbst.
+
+Den weichen Umbruch tippst du nie selbst. Er steht in Dateien, die anderswo entstanden sind — in einem anderen Editor, von einem KI-Agenten oder in einem Pull Request. Manche schreiben jeden Satz auf eine eigene Zeile, damit ein Commit genau den geänderten Satz zeigt und nicht den ganzen Absatz. Für Markdown ist so ein Zeilenende ein Leerzeichen: Auf GitHub, im Blog und in jedem Export läuft der Absatz als Fliesstext durch. bun.ink zeigt ihn deshalb genauso, behält aber jedes Zeilenende und speichert die Datei so zurück, wie sie war. Ein Commit zeigt dann nur, was du tatsächlich geändert hast.
+
+Bricht eine Zeile mitten im Absatz um, obwohl rechts noch Platz wäre, steckt meist ein harter Umbruch dahinter, der sonst kein eigenes Zeichen hat. Schalte **Format → Dokument → Zeilenumbrüche anzeigen** ein: Wie die Formatierungszeichen in Word erscheinen ¶ am Ende jedes Absatzes, ↵ bei jedem harten und ↩ bei jedem weichen Umbruch. Die Zeichen stehen nur auf dem Bildschirm, nie in der Datei. Einen ungewollten Umbruch löschst du wie jedes andere Zeichen; löschst du ein ↩, rücken die beiden Zeilen auch in der Datei zusammen. Ein zweiter Klick auf den Eintrag blendet die Zeichen wieder aus.
 
 ## Mehrere Dokumente in Tabs
 
