@@ -63,7 +63,7 @@ Zellen verbinden oder Spalten ausrichten kannst du in bun.ink nicht; Markdown ke
 
 Schreibt dir jemand «in Zeile 64 bis 75 stimmt etwas nicht», meint er die Zeilen der Markdown-Datei — so zählen GitHub, ein KI-Agent und auch die Änderungs- und Review-Ansicht von bun.ink. Im Editor siehst du diese Zeilen nicht, denn er zeigt formatierten Text. Schalte **Format → Darstellung → Zeilennummern anzeigen** ein: Links neben jedem Absatz, jeder Überschrift, jedem Listenpunkt, jeder Tabellenzeile und jeder Code-Zeile erscheint die Zeile, auf der sie in der Datei steht. Die Nummern stehen nur auf dem Bildschirm, nie in der Datei. Ein zweiter Klick auf den Eintrag blendet sie wieder aus; nach dem Neuladen sind sie ebenfalls aus.
 
-Gezählt werden Dateizeilen, keine Bildschirmzeilen. Ein langer Absatz, der im Editor über fünf Bildschirmzeilen umbricht, steht in der Datei oft auf einer einzigen Zeile und hat deshalb nur eine Nummer. Umgekehrt kann ein Absatz aus mehreren Dateizeilen bestehen, etwa wenn er weiche Umbrüche enthält (siehe «Absätze und Zeilenumbrüche»).
+Gezählt werden Zeilen der Datei, nicht Zeilen auf dem Bildschirm. Ein langer Absatz, der im Editor über fünf Bildschirmzeilen umbricht, steht in der Datei oft auf einer einzigen Zeile und hat deshalb nur eine Nummer. Umgekehrt kann ein Absatz aus mehreren Dateizeilen bestehen, etwa wenn er weiche Umbrüche enthält (siehe «Absätze und Zeilenumbrüche»).
 
 Manchmal springen die Nummern, obwohl im Editor nichts dazwischen steht. Dann enthält die Datei Zeilen, die nur der Form dienen und die der Editor nicht zeigt:
 
