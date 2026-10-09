@@ -52,7 +52,7 @@ Was der Agent dabei sieht, ist der gesamte Inhalt des Repositorys, und er schick
 
 Ein Auftrag an einen Agenten ist kein Prompt im Sinne von «schreib mir etwas», sondern eine Arbeitsanweisung mit Umfang, Ziel und Grenze. Was in der Praxis funktioniert:
 
-- **Sag genau, welche Dateien gemeint sind.** «Kapitel 3 bis 5» ist ein Auftrag, «der Roman» ist eine Einladung zum Durcheinander.
+- **Sag genau, welche Dateien gemeint sind.** «Kapitel 3 bis 5» ist ein gezielter Auftrag, «der Roman» ist eine Einladung zum Durcheinander.
 - **Sag, was nicht angefasst werden soll.** Dialoge, Zitate, die Kapitelüberschriften — nenne es ausdrücklich, sonst gilt alles als Freiwild.
 - **Eine Aufgabe pro Auftrag.** Rechtschreibung *und* Kürzen *und* Struktur ergeben einen Pull Request, den du nicht mehr sinnvoll durchgehen kannst.
 - **Verlange kleine Vorschläge.** Zehn einzelne Änderungen kannst du annehmen oder verwerfen; ein neu geschriebenes Kapitel kannst du nur ganz oder gar nicht nehmen.
@@ -67,21 +67,22 @@ Wenn der Agent fertig ist, liegt seine Arbeit als Pull Request auf deinem Branch
 Beim Durchgehen lohnt sich ein anderer Blick als beim Lektorat eines Menschen. Achte besonders auf:
 
 - **Stille Änderungen.** Ein Agent «verbessert» gern nebenbei etwas, wonach niemand gefragt hat. Jeder Block, der nicht zum Auftrag gehört, wird verworfen — auch wenn er gut aussieht.
-- **Erfundene Sicherheit.** Namen, Jahreszahlen, Zitate und Querverweise prüfst du an der Quelle, nicht am Vorschlag.
+- **Erfundene Sicherheit.** Namen, Jahreszahlen, Zitate und Quellenangaben werden sehr häufig erfunden. Diese müssen manuell geprüft werden.
 - **Umfang.** Ein Pull Request mit dreissig Blöcken über zehn Dateien ist ein Zeichen, dass der Auftrag zu weit war. Schliess ihn und stell die Aufgabe enger.
 - **Deine Stimme.** Wenn ein Satz danach korrekter und langweiliger ist, war es keine Verbesserung.
 
 Verworfene Stellen und eigene Gegenfassungen schreibt [bun.ink](http://bun.ink) an den Pull Request zurück. Beim Agenten hat das keinen erzieherischen Effekt — er lernt daraus nichts für das nächste Mal. Was er dauerhaft wissen soll, gehört deshalb ins Repository.
 
-## Hausregeln aufschreiben
+## Regel zur Bearbeitung aufschreiben
 
 Damit du nicht bei jedem Auftrag dieselben Vorgaben wiederholst, legst du sie als Datei in dein Repository. Üblich ist eine `AGENTS.md` im obersten Ordner; viele Agenten lesen sie von sich aus, und wo das nicht der Fall ist, verweist du im Auftrag darauf.
 
-Hineingehört, was ein neuer Mitarbeiter am ersten Tag wissen müsste:
+Hineingehört, was ein fiktiver neuer Mitarbeiter am ersten Tag wissen müsste:
 
 - Worum es in dem Projekt geht und wer es liest.
 - Welche Dateien der Text sind und welche nur Beiwerk.
 - Die Regeln, die dir wichtig sind: Anrede, Zeitform, Schreibweisen, was auf keinen Fall geändert wird.
 - Wie gearbeitet wird: eigener Branch, ein Thema pro Pull Request, Rückfragen statt Vermutungen.
+- Verweise auf weitere Regel- Dateien
 
-Dieses Handbuch macht es genauso — die Regeln, nach denen daran gearbeitet wird, stehen im Repository und gelten für Menschen und Agenten gleichermassen.
+Neben globalen Regeln können auch weitere Regel- Dateien angelegt werden die z.B. die Story oder Regeln zum Schreibstil enthalten können. Wichtig ist nur, dass die globale Regel- Datei auf diese weitere Regel- Dateien verweist. Die Globale Regel- Datei in diesem Repository z.B. (writing-with-bunink) ist AGENTS.md. Weitere untergeordnete Regel- Dateien sind CHAPTERS.md, [CONTENTS.md](http://CONTENTS.md) und DOCUMENTS.md. Dieses Regeln stehen im Wurzelverzeichnis des Handbuch- Repository und enthalten die Regeln, nach denen daran gearbeitet werden soll. Sie gelten für Menschen und Agenten gleichermassen.
