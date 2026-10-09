@@ -75,7 +75,7 @@ Verworfene Stellen und eigene Gegenfassungen schreibt [bun.ink](http://bun.ink) 
 
 ## Regeln für die Bearbeitung aufschreiben
 
-Damit du nicht bei jedem Auftrag dieselben Vorgaben wiederholst, legst du sie als Datei in dein Repository. Üblich ist eine `AGENTS.md` im obersten Ordner; viele Agenten lesen sie von sich aus, und wo das nicht der Fall ist, verweist du im Auftrag darauf.
+Damit du nicht bei jedem Auftrag dieselben Vorgaben wiederholst, legst du sie als Datei in dein Repository. So entsteht das Gedächtnis, das der Agent selbst nicht hat: Er liest die Dateien zu Beginn jeder Session neu. Üblich ist eine `AGENTS.md` im obersten Ordner; viele Agenten lesen sie von sich aus, und wo das nicht der Fall ist, verweist du im Auftrag darauf.
 
 Hineingehört, was ein neuer Mitarbeiter am ersten Tag wissen müsste:
 
