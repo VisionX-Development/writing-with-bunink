@@ -61,7 +61,7 @@ Zellen verbinden oder Spalten ausrichten kannst du in bun.ink nicht; Markdown ke
 
 ### Zeilennummern
 
-Schreibt dir jemand «in Zeile 64 bis 75 stimmt etwas nicht», meint er die Zeilen der Markdown-Datei — so zählen GitHub, ein KI-Agent und auch die Änderungs- und Review-Ansicht von [bun.ink](http://bun.ink). Im Editor siehst du diese Zeilen nicht, denn er zeigt formatierten Text. Schalte **Format → Darstellung → Zeilennummern anzeigen** ein: Links neben jedem Absatz, jeder Überschrift, jedem Listenpunkt, jeder Tabellenzeile und jeder Code-Zeile erscheint die Zeile, auf der sie in der Datei steht. Die Nummern stehen nur auf dem Bildschirm, nie in der Datei. Ein zweiter Klick auf den Eintrag blendet sie wieder aus;
+Schreibt dir jemand «in Zeile 64 bis 75 stimmt etwas nicht», meint er die Zeilen der Markdown-Datei — so zählen GitHub, ein KI-Agent und auch die Änderungs- und Review-Ansicht von bun.ink. Im Editor siehst du diese Zeilen nicht, denn er zeigt formatierten Text. Schalte **Format → Darstellung → Zeilennummern anzeigen** ein: Links neben jedem Absatz, jeder Überschrift, jedem Listenpunkt, jeder Tabellenzeile und jeder Code-Zeile erscheint die Zeile, auf der sie in der Datei steht. Die Nummern stehen nur auf dem Bildschirm, nie in der Datei. Ein zweiter Klick auf den Eintrag blendet sie wieder aus; nach dem Neuladen sind sie ebenfalls aus.
 
 Gezählt werden Zeilen der Datei, nicht Zeilen auf dem Bildschirm. Ein langer Absatz, der im Editor über fünf Bildschirmzeilen umbricht, steht in der Datei oft auf einer einzigen Zeile und hat deshalb nur eine Nummer. Umgekehrt kann ein Absatz aus mehreren Dateizeilen bestehen, etwa wenn er weiche Umbrüche enthält (siehe «Absätze und Zeilenumbrüche»).
 
@@ -69,22 +69,22 @@ Manchmal springen die Nummern, obwohl im Editor nichts dazwischen steht. Dann en
 
 - **Leerzeilen:** Zwischen zwei Absätzen steht in Markdown eine leere Zeile. Der Abstand, den du im Editor siehst, ist nur Gestaltung.
 
-- **Code-Blöcke:** Ein Code-Block beginnt und endet in der Datei mit einer Zeile aus drei Backticks (\` \`\`\` \`), dahinter oben gegebenenfalls die Sprache. Diese beiden Zeilen zeigt der Editor nicht; er macht daraus den Rahmen und das Label oben links. Ein Code-Block mit einer einzigen Zeile Code belegt deshalb drei Zeilen der Datei.
+- **Code-Blöcke:** Ein Code-Block beginnt und endet in der Datei mit einer Zeile aus drei Backticks (`` ``` ``), dahinter oben gegebenenfalls die Sprache. Diese beiden Zeilen zeigt der Editor nicht; er macht daraus den Rahmen und das Label oben links. Ein Code-Block mit einer einzigen Zeile Code belegt deshalb drei Zeilen der Datei.
 
-- **Tabellen:** Unter der Kopfzeile steht in der Datei eine Trennzeile aus Strichen (`| --- | --- |`). Sie legt fest, dass darüber die Kopfzeile ist, und erscheint im Editor nicht. Die erste Zeile unter dem Kopf trägt deshalb eine Nummer, die um zwei höher ist.ok
+- **Tabellen:** Unter der Kopfzeile steht in der Datei eine Trennzeile aus Strichen (`| --- | --- |`). Sie legt fest, dass darüber die Kopfzeile ist, und erscheint im Editor nicht. Die erste Zeile unter dem Kopf trägt deshalb eine Nummer, die um zwei höher ist.
 
 Ein Beispiel mit zwei kurzen Code-Blöcken hintereinander:
 
 | Zeile | In der Datei                          | Im Editor (was du siehst) |
 | ----- | ------------------------------------- | ------------------------- |
 | 75    | ein Absatz                            | 75 Text des Absatzes      |
-| 76    | \` \`\`\` \` (Beginn des Code-Blocks) | (nicht angezeigt)         |
+| 76    | `` ``` `` (Beginn des Code-Blocks) | (nicht angezeigt)         |
 | 77    | Text des Code Block I                 | 77 Text des Code Block I  |
-| 78    | \` \`\`\` \` (Ende des Code-Blocks)   | (nicht angezeigt)         |
+| 78    | `` ``` `` (Ende des Code-Blocks)   | (nicht angezeigt)         |
 | 79    | Leerzeile                             | (nicht angezeigt)         |
-| 80    | \` \`\`\` \` (Beginn des Code-Blocks) | (nicht angezeigt)         |
+| 80    | `` ``` `` (Beginn des Code-Blocks) | (nicht angezeigt)         |
 | 81    | Text des Code Block II                | 81 Text des Code Block II |
-| 82    | \` \`\`\` \` (Ende des Code-Blocks)   | (nicht angezeigt)         |
+| 82    | `` ``` `` (Ende des Code-Blocks)   | (nicht angezeigt)         |
 | 83    | Leerzeile                             | (nicht angezeigt)         |
 | 84    | nächster Absatz                       | 84 Text des Absatzes      |
 
