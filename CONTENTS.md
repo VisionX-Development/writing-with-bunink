@@ -36,6 +36,6 @@ These stand on their own.
 | # | Chapter | Status | German | English |
 |---|---|---|---|---|
 | 08 | KI-Tools und deine Texte | draft | [de](de/08-ki-agenten.md) | [en](en/08-ai-agents.md) |
-| 09 | Verschlüsselte Bereiche – Sicherheit für deine Inhalte | draft | [de](de/09-verschluesselte-bereiche.md) | [en](en/09-encrypted-areas.md) |
+| 09 | Verschlüsselte Bereiche -Sicherheit für deine Inhalte | draft | [de](de/09-verschluesselte-bereiche.md) | [en](en/09-encrypted-areas.md) |
 | 10 | Statistik, Versionen und Export | draft | [de](de/10-statistik-versionen-export.md) | [en](en/10-statistics-versions-and-export.md) |
 | 11 | Metadaten und Notizen | draft | [de](de/11-metadaten-und-notizen.md) | [en](en/11-metadata-and-notes.md) |
