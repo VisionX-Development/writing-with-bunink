@@ -17,13 +17,12 @@ Weil deine Texte in einem Repository liegen, kann eine Software daran arbeiten, 
 
 Ein KI-Agent ist ein Programm mit einem Sprachmodell dahinter, das nicht nur antwortet, sondern arbeitet: Es öffnet die Dateien in deinem Repository, liest sie, ändert etwas, legt einen Branch an und öffnet einen Pull Request. Was danach passiert, entscheidest du — genau wie beim Lektorat in Kapitel 7.
 
-Der Unterschied zu einem Chatfenster ist der Zugriff. Ein Chat sieht das, was du hineinkopierst. Ein Agent sieht dein Repository und kann darin schreiben. Das macht ihn nützlich für Arbeiten, die den ganzen Text betreffen — und es ist der Grund, warum du ihm nicht dieselbe Freiheit gibst wie dir selbst. Richtig eingesetzt ist ein KI-Agent ein Werkzeug, das deine Texte weiterbringen kann.
+Der Unterschied zu einem Chatfenster ist der Zugriff. Ein Chat sieht das, was du hineinkopierst. Ein Agent sieht dein Repository und kann darin schreiben. Das macht ihn nützlich für Arbeiten, die den ganzen Text betreffen — insbesondere bei z.B. Stil- Anweisungen oder Hintergrundinformationen die alle Texte deines Repository betreffen, dazu mehr weiter unten. Richtig eingesetzt ist ein KI-Agent ein Werkzeug, das deine Texte weiterbringen kann.
 
 Drei Dinge, die ein Agent hier ausdrücklich nicht ist:
 
 - **Kein Mitautor.** Er schlägt vor, er übernimmt nicht. Der Merge liegt bei dir.
-- **Kein Gedächtnis.** Jeder Auftrag beginnt bei null. Was der Agent über dein Projekt wissen soll, muss im Repository stehen (siehe **Hausregeln aufschreiben** weiter unten).
-- **Keine zweite Meinung mit Verantwortung.** Er behauptet Dinge auch dann flüssig, wenn sie nicht stimmen. Bei Fakten, Zitaten und Namen prüfst du selbst.
+- **Keine zweite Meinung mit Verantwortung.** Er behauptet Dinge auch dann flüssig, wenn sie nicht stimmen. Bei Fakten, Zitaten und Namen solltest du das selber nachprüfen.
 
 ## Wofür sich ein Agent lohnt
 
@@ -45,7 +44,7 @@ Wie der Zugriff eingerichtet wird, hängt vom Anbieter ab — die meisten Agente
 
 1. **Gib Zugriff auf genau ein Repository**, nicht auf alle. GitHub fragt bei der Installation, welche Repositories eine App sehen darf.
 2. **Lass den Agenten auf einem eigenen Branch arbeiten.** Direkt auf `main` schreibt niemand ausser dir — auch kein Agent.
-3. **Nimm einen Agenten, der Pull Requests öffnet.** Dann bekommst du das Ergebnis in der Form, die du aus Kapitel 7 schon kennst, statt als fertige Tatsache.
+3. **Lass den Agenten, Pull Requests bearbeiten.** Dann bekommst du das Ergebnis in der Form, die du aus Kapitel 7 schon kennst, statt als fertige Tatsache.
 
 Was der Agent dabei sieht, ist der gesamte Inhalt des Repositorys, und er schickt Teile davon an den Sprachmodell-Anbieter, für den er arbeitet. Bei einem privaten Repository verlässt dein Text damit trotzdem dein Konto. Texte, die das nicht dürfen, gehören in einen verschlüsselten Bereich (Kapitel 9) oder in ein Projekt ohne Agenten.
 
@@ -53,7 +52,7 @@ Was der Agent dabei sieht, ist der gesamte Inhalt des Repositorys, und er schick
 
 Ein Auftrag an einen Agenten ist kein Prompt im Sinne von «schreib mir etwas», sondern eine Arbeitsanweisung mit Umfang, Ziel und Grenze. Was in der Praxis funktioniert:
 
-- **Sag, welche Dateien gemeint sind.** «Kapitel 3 bis 5» ist ein Auftrag, «der Roman» ist eine Einladung zum Durcheinander.
+- **Sag genau, welche Dateien gemeint sind.** «Kapitel 3 bis 5» ist ein Auftrag, «der Roman» ist eine Einladung zum Durcheinander.
 - **Sag, was nicht angefasst werden soll.** Dialoge, Zitate, die Kapitelüberschriften — nenne es ausdrücklich, sonst gilt alles als Freiwild.
 - **Eine Aufgabe pro Auftrag.** Rechtschreibung *und* Kürzen *und* Struktur ergeben einen Pull Request, den du nicht mehr sinnvoll durchgehen kannst.
 - **Verlange kleine Vorschläge.** Zehn einzelne Änderungen kannst du annehmen oder verwerfen; ein neu geschriebenes Kapitel kannst du nur ganz oder gar nicht nehmen.
