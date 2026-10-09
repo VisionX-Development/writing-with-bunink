@@ -25,7 +25,7 @@ Wenn dir das zu viel Syntax ist, nimm den **Format**-Knopf in der Werkzeugleiste
 - **Absatz:** **Überschrift 1** bis **Überschrift 3**, **Aufzählung** und **Nummerierte Liste**; ein zweiter Klick auf denselben Eintrag macht wieder einen gewöhnlichen Absatz daraus. **Zeilenumbruch** beginnt eine neue Zeile im selben Absatz, ohne Abstand dazwischen — dasselbe wie Shift+Enter.
 - **Blöcke:** **Zitat**, **Code-Block** und **Tabelle einfügen** (siehe «Tabellen» weiter unten). Ein Code-Block zeigt Text in fester Zeichenbreite und mit Rahmen; ist eine Sprache angegeben, etwa `python`, steht sie oben links am Block. Auch hier macht ein zweiter Klick auf **Zitat** oder **Code-Block** wieder einen gewöhnlichen Absatz daraus.
 - **Dokument:** **Metadaten einfügen** und **Notiz einfügen** (beides erklärt Kapitel 11). Beides steht in der Datei, erscheint aber in keiner Vorschau und nicht im veröffentlichten Text.
-- **Darstellung:** Diese Einträge ändern nie die Datei. **Zeilenabstand** stellt zwischen **Eng**, **Kompakt**, **Normal** und **Weit** um; die Einstellung gilt für alle Dokumente, weil Markdown keinen Zeilenabstand kennt. **Zeilenumbrüche anzeigen** macht Absatzenden und Umbrüche sichtbar (siehe unten). **Markdown-Quelltext** zeigt das Dokument so, wie es gespeichert wird: mit allen Zeichen, Metadaten und Link-Adressen. Diese Ansicht ist nur zum Lesen; **Zurück zum Editor** bringt dich wieder zum Schreiben.
+- **Darstellung:** Diese Einträge ändern nie die Datei. **Zeilenabstand** stellt zwischen **Eng**, **Kompakt**, **Normal** und **Weit** um; die Einstellung gilt für alle Dokumente, weil Markdown keinen Zeilenabstand kennt. **Zeilenumbrüche anzeigen** macht Absatzenden und Umbrüche sichtbar (siehe unten). **Zeilennummern anzeigen** blendet links neben dem Text ein, auf welcher Zeile der Datei ein Block steht (siehe «Zeilennummern» weiter unten). **Markdown-Quelltext** zeigt das Dokument so, wie es gespeichert wird: mit allen Zeichen, Metadaten und Link-Adressen. Diese Ansicht ist nur zum Lesen; **Zurück zum Editor** bringt dich wieder zum Schreiben.
 
 Unterstreichen findest du nicht. Markdown kennt es nicht, und bun.ink bietet nichts an, was es beim Speichern wieder verlieren würde.
 
@@ -58,6 +58,37 @@ Steht der Cursor in einer Tabelle, erscheint darüber eine Leiste:
 - **×** entfernt die ganze Tabelle. Rückgängig holt sie zurück.
 
 Zellen verbinden oder Spalten ausrichten kannst du in bun.ink nicht; Markdown kennt verbundene Zellen nicht. Steht die Tabelle am Ende des Dokuments, führt Pfeil nach unten aus ihrer letzten Zeile in einen neuen Absatz darunter.
+
+### Zeilennummern
+
+Schreibt dir jemand «in Zeile 64 bis 75 stimmt etwas nicht», meint er die Zeilen der Markdown-Datei — so zählen GitHub, ein KI-Agent und auch die Änderungs- und Review-Ansicht von [bun.ink](http://bun.ink). Im Editor siehst du diese Zeilen nicht, denn er zeigt formatierten Text. Schalte **Format → Darstellung → Zeilennummern anzeigen** ein: Links neben jedem Absatz, jeder Überschrift, jedem Listenpunkt, jeder Tabellenzeile und jeder Code-Zeile erscheint die Zeile, auf der sie in der Datei steht. Die Nummern stehen nur auf dem Bildschirm, nie in der Datei. Ein zweiter Klick auf den Eintrag blendet sie wieder aus;
+
+Gezählt werden Zeilen der Datei, nicht Zeilen auf dem Bildschirm. Ein langer Absatz, der im Editor über fünf Bildschirmzeilen umbricht, steht in der Datei oft auf einer einzigen Zeile und hat deshalb nur eine Nummer. Umgekehrt kann ein Absatz aus mehreren Dateizeilen bestehen, etwa wenn er weiche Umbrüche enthält (siehe «Absätze und Zeilenumbrüche»).
+
+Manchmal springen die Nummern, obwohl im Editor nichts dazwischen steht. Dann enthält die Datei Zeilen, die nur der Form dienen und die der Editor nicht zeigt:
+
+- **Leerzeilen:** Zwischen zwei Absätzen steht in Markdown eine leere Zeile. Der Abstand, den du im Editor siehst, ist nur Gestaltung.
+
+- **Code-Blöcke:** Ein Code-Block beginnt und endet in der Datei mit einer Zeile aus drei Backticks (\` \`\`\` \`), dahinter oben gegebenenfalls die Sprache. Diese beiden Zeilen zeigt der Editor nicht; er macht daraus den Rahmen und das Label oben links. Ein Code-Block mit einer einzigen Zeile Code belegt deshalb drei Zeilen der Datei.
+
+- **Tabellen:** Unter der Kopfzeile steht in der Datei eine Trennzeile aus Strichen (`| --- | --- |`). Sie legt fest, dass darüber die Kopfzeile ist, und erscheint im Editor nicht. Die erste Zeile unter dem Kopf trägt deshalb eine Nummer, die um zwei höher ist.ok
+
+Ein Beispiel mit zwei kurzen Code-Blöcken hintereinander:
+
+| Zeile | In der Datei                          | Im Editor (was du siehst) |
+| ----- | ------------------------------------- | ------------------------- |
+| 75    | ein Absatz                            | 75 Text des Absatzes      |
+| 76    | \` \`\`\` \` (Beginn des Code-Blocks) | (nicht angezeigt)         |
+| 77    | Text des Code Block I                 | 77 Text des Code Block I  |
+| 78    | \` \`\`\` \` (Ende des Code-Blocks)   | (nicht angezeigt)         |
+| 79    | Leerzeile                             | (nicht angezeigt)         |
+| 80    | \` \`\`\` \` (Beginn des Code-Blocks) | (nicht angezeigt)         |
+| 81    | Text des Code Block II                | 81 Text des Code Block II |
+| 82    | \` \`\`\` \` (Ende des Code-Blocks)   | (nicht angezeigt)         |
+| 83    | Leerzeile                             | (nicht angezeigt)         |
+| 84    | nächster Absatz                       | 84 Text des Absatzes      |
+
+Die Nummern stimmen also. «Zeile 80 bis 82» meint genau den zweiten Code-Block, auch wenn du von ihm nur eine Zeile siehst. Willst du jede Zeile der Datei sehen, auch die unsichtbaren, öffne **Format → Darstellung → Markdown-Quelltext**.
 
 ## Mehrere Dokumente in Tabs
 
@@ -103,6 +134,6 @@ Du verwaltest sie auf der Seite **Snippets**. **Neues Snippet** braucht einen **
 
 Im Editor tippst du das Kürzel und drückst die Leertaste. Das Kürzel verschwindet, der Baustein steht da.
 
-Damit ein Baustein nicht bei jedem Einsatz nachbearbeitet werden muss, kannst du Sprungmarken hineinsetzen — Platzhalter in geschweiften Klammern, etwa `{Name}`. Mit Tab springst du zur nächsten Marke; ihr Text ist markiert, sodass du ihn entweder übernimmst oder direkt überschreibst. Im Snippet-Editor fügt **Sprungmarke einfügen** eine ein.
+Damit ein Baustein nicht bei jedem Einsatz nachbearbeitet werden muss, kannst du Sprungmarken hineinsetzen — Platzhalter in geschweiften Klammern, etwa `Name`. Mit Tab springst du zur nächsten Marke; ihr Text ist markiert, sodass du ihn entweder übernimmst oder direkt überschreibst. Im Snippet-Editor fügt **Sprungmarke einfügen** eine ein.
 
 Sprungmarken funktionieren auch in gewöhnlichem Text, nicht nur in Snippets. Welche Zeichen sie umschliessen, legst du in den Einstellungen unter **Sprungmarken** fest; lässt du das Feld leer, sind sie aus.
