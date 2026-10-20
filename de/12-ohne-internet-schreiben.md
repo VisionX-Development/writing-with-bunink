@@ -48,11 +48,11 @@ Fällt die Verbindung weg, öffnest du bun.ink wie gewohnt. Ein Hinweis über de
 
 Was du schreibst, sichert bun.ink laufend auf dem Gerät, auch ohne dass du speicherst. Der Hinweis über dem Editor zählt mit, wie viele Dokumente aufs Hochladen warten.
 
-Du kannst Dokumente offline auch schliessen: bun.ink fragt dann nicht nach, sondern behält deinen Stand auf dem Gerät und zeigt ihn beim nächsten Öffnen wieder. Das gilt auch für neue Dokumente: Sie bleiben im Projekt stehen und lassen sich jederzeit wieder öffnen. Umbenennen, verschieben oder löschen kannst du sie erst, wenn sie hochgeladen sind.
+Du kannst Dokumente offline auch schliessen: bun.ink fragt dann nicht nach, sondern behält deinen Stand auf dem Gerät und zeigt ihn beim nächsten Öffnen wieder. Das gilt auch für neue Dokumente: Sie bleiben im Projekt stehen und lassen sich jederzeit wieder öffnen. Weil es sie bisher nur auf deinem Gerät gibt, kannst du sie offline auch umbenennen, verschieben, exportieren und wieder löschen.
 
 ## Was offline nicht geht
 
-Alles, was den Server braucht oder die Struktur des Projekts ändert, wartet, bis du wieder online bist: Projekte und Ordner anlegen, Dokumente umbenennen, verschieben oder löschen, Dateien importieren, GitHub, der Versionsverlauf und das Ändern der Passphrase. Ein Klick darauf zeigt **Offline nicht verfügbar** — es geht dabei nichts verloren.
+Alles, was den Server braucht oder die Struktur des Projekts ändert, wartet, bis du wieder online bist: Projekte und Ordner anlegen, vorhandene Dokumente umbenennen, verschieben oder löschen, Dateien importieren, GitHub, der Versionsverlauf und das Ändern der Passphrase. Ein Klick darauf zeigt **Offline nicht verfügbar** — es geht dabei nichts verloren.
 
 Projekte, die du nicht vorbereitet hast, sind offline nicht da. Und in High-Privacy-Bereichen kannst du offline keine neuen Dokumente anlegen, nur vorhandene bearbeiten.
 
