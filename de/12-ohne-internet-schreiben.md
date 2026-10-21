@@ -54,7 +54,9 @@ Du kannst Dokumente offline auch schliessen: bun.ink fragt dann nicht nach, sond
 
 Alles, was den Server braucht oder die Struktur des Projekts ändert, wartet, bis du wieder online bist: Projekte und Ordner anlegen, vorhandene Dokumente umbenennen, verschieben oder löschen, Dateien importieren, GitHub, der Versionsverlauf und das Ändern der Passphrase. Ein Klick darauf zeigt **Offline nicht verfügbar** — es geht dabei nichts verloren.
 
-Projekte, die du nicht vorbereitet hast, sind offline nicht da. Und in High-Privacy-Bereichen kannst du offline keine neuen Dokumente anlegen, nur vorhandene bearbeiten.
+Projekte, die du nicht vorbereitet hast, sind offline nicht da. Fällt das Netz weg, während du in einem solchen Projekt arbeitest, kannst du es bis zur Verbindung nur noch lesen und exportieren. Was du bis dahin geschrieben hast, bleibt auf dem Gerät und wird hochgeladen, sobald du wieder online bist. Das ist Absicht: Auf einem fremden Rechner, etwa in der Bibliothek, soll kein Text liegen bleiben, den du dort nicht haben willst. Brauchst du ihn, exportiere ihn, bevor du dich abmeldest. Auf deinem eigenen Gerät machst du das Projekt einfach offline verfügbar.
+
+Und in High-Privacy-Bereichen kannst du offline keine neuen Dokumente anlegen, nur vorhandene bearbeiten.
 
 Auch das Anmelden braucht eine Verbindung. Wer abgemeldet ist, sieht offline nur einen Hinweis; sobald das Netz zurück ist, geht es von selbst zur Anmeldung. Den Sicherheits-Logout setzt bun.ink offline aus, damit du dich nicht aussperrst. Zurück online gilt er wieder.
 
